@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { Separator } from '../ui/separator';
-import { motion, AnimatePresence } from 'framer-motion';
 import FollowButtonAction from './FollowButtonAction';
 
 export function Footer() {
