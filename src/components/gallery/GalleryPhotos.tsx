@@ -1,24 +1,22 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import {
-  ArrowLeft,
-  ArrowRight,
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight,
-  X,
-} from 'lucide-react';
-import { useMemo, useRef, useState } from 'react';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import { motion } from 'framer-motion';
+import {
+  ArrowLeft,
+  ArrowRight,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight
+} from 'lucide-react';
+import Image from 'next/image';
+import { useMemo, useRef, useState } from 'react';
 import { Button } from '../ui/button';
-import { SingleArticleHero } from '../articles/SingleArticleHero';
 
 const photos = [
   {
