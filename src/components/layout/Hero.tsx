@@ -20,7 +20,7 @@ const heroSlides = [
   },
   {
     id: 3,
-    image: '/images/27223f5f42dd79ac8eaa337d3740b52f5744a5e9.png',
+    image: '/images/hero-2.svg',
     title: 'VOICE OF THE PEOPLE:',
     subtitle: 'REPRESENTING WITH INTEGRITY AND PURPOSE.',
     tagline: 'Representation • Integrity • Service'
@@ -76,7 +76,7 @@ export function Hero() {
       </div>
 
       {/* Hero Content with Animations */}
-      <div className="absolute z-20 text-left text-white px-4 lg:px-16 max-w-5xl bottom-0 space-y-5">
+      <div className="absolute z-20 text-left text-white px-4 lg:px-16 max-w-5xl bottom-0 space-y-3">
         <motion.div
           key={`tagline-${currentSlide}`}
           initial={{ opacity: 0, y: 30 }}

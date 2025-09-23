@@ -102,7 +102,12 @@ body {
 }
 
 /* Heading font for titles and headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading), system-ui, sans-serif;
 }
 
@@ -174,16 +179,98 @@ h1, h2, h3, h4, h5, h6 {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
+@layer utilities {
+
+  .text-shadow-on-light {
+    /* use for light-colored text (e.g., white) */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+  }
+ 
+  .text-shadow-on-dark {
+    /* use for dark-colored text (e.g., gray-900) */
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65);
+  }
+
+  /* Stronger glass contrast: subtle stroke + multi-shadow for busy backgrounds */
+  .text-contrast-light {
+    color: #ffffff;
+    -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  }
+  .text-contrast-dark {
+    color: #111827; /* tailwind gray-900 */
+    -webkit-text-stroke: 0.15px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+  }
+
+  /* Crisp outline (no blur) for maximum sharpness on glass */
+  .text-outline-light {
+    color: #ffffff;
+    -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.55);
+    text-shadow: none;
+  }
+  .text-outline-dark {
+    color: #111827;
+    -webkit-text-stroke: 0.22px rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+  }
+
+  /* Gradient text options without shadow */
+  .text-grad-light {
+    color: transparent;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(229,231,235,0.96) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .text-grad-dark {
+    color: transparent;
+    background-image: linear-gradient(180deg, rgba(17,24,39,1) 0%, rgba(55,65,81,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  /* Auto-contrast text without shadow: appears light on dark, dark on light */
+  .text-auto-contrast {
+    color: #ffffff; /* base color; difference blend makes it invert over backgrounds */
+    mix-blend-mode: difference;
+  }
+
+  /* Black outline for visibility on light backgrounds */
+  .text-outline-black {
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+  }
+
+  /* Frosted glass preset: semi-transparent white fill, blur, subtle white stroke */
+  .glass-frost {
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+  /* Lightweight noise texture as a tiling SVG background */
+  .noise-20 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0' /%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.08'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='64' height='64' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 128px 128px;
+    background-repeat: repeat;
+  }
+}
 /* Hide scrollbar utility */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }

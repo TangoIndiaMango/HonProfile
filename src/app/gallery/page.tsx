@@ -6,8 +6,10 @@ export default function GalleryPage() {
   return (
     <main>
       <GalleryHero />
-      <GalleryPhotos />
-      <GalleryVideos />
+      <div className="max-w-7xl mx-auto bg-gray-50">
+        <GalleryPhotos />
+        <GalleryVideos />
+      </div>
     </main>
   );
 }

@@ -28,10 +28,9 @@ export function ArticleCard({
   const articleSlug = slug || `article-${title.toLowerCase().replace(/\s+/g, '-')}`;
   
   return (
-    <Link href={`/articles/${articleSlug}`}>
-      <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB] mb-3">
+    <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB] mb-3 h-[400px] flex flex-col">
       {/* Article Image */}
-      <div className="relative aspect-[5/2] overflow-hidden">
+      <div className="relative aspect-[5/2] overflow-hidden flex-shrink-0">
         <Image
           src={image}
           alt={title}
@@ -50,7 +49,7 @@ export function ArticleCard({
       </div>
 
       {/* Article Content - White background below image */}
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-1">
         {/* Meta Info */}
         <div className="flex items-center gap-3 text-sm text-gray-500 mb-2">
           <span>{readTime}</span>
@@ -64,10 +63,10 @@ export function ArticleCard({
         </h3>
 
         {/* Excerpt */}
-        <p className="text-sm text-gray-600 line-clamp-2 mb-3">{excerpt}</p>
+        <p className="text-sm text-gray-600 line-clamp-2 mb-3 flex-1">{excerpt}</p>
 
-        {/* View More Button(s) */}
-        <div className="flex items-center gap-3">
+        {/* View More Button(s) - Pushed to bottom */}
+        <div className="flex items-center gap-3 mt-auto">
           <Button
             size="sm"
             className="bg-black hover:bg-black/90 text-white rounded-full px-4 py-1 text-xs"
@@ -90,6 +89,5 @@ export function ArticleCard({
         </div>
       </div>
     </article>
-    </Link>
   );
 }

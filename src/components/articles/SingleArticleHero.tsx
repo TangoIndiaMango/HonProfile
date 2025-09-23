@@ -32,7 +32,7 @@ export function SingleArticleHero({
       </div>
 
       {/* Back Button */}
-      <div className="absolute top-8 left-4 lg:left-16 z-20">
+      <div className="absolute top-20 left-4 lg:left-16 z-20">
         <Link
           href="/articles"
           className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors"

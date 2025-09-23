@@ -1,13 +1,16 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { IconMenu3 } from '@tabler/icons-react';
+import { X } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const pathname = usePathname();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -16,6 +19,10 @@ export function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isActive = (path: string) => {
+    return pathname === path;
+  };
 
   return (
     <>
@@ -30,9 +37,7 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between p-4 lg:px-6">
             <div
-              className={`font-bold text-lg lg:text-xl transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className={`font-bold text-lg lg:text-xl transition-colors text-outline-black`}
             >
               <Link href="/">HON. ADE ADEOGUN</Link>
             </div>
@@ -41,27 +46,21 @@ export function Navbar() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/"
-                className={`hover:text-gray-300 transition-colors ${
-                  isScrolled ? 'text-gray-900' : 'text-white'
-                }`}
+                className={`hover:opacity-80 transition-opacity text-outline-black ${isActive('/') ? 'text-white' : 'text-outline-black'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/gallery"
-                className={`hover:text-gray-300 transition-colors ${
-                  isScrolled ? 'text-gray-900' : 'text-white'
-                }`}
+                className={`hover:opacity-80 transition-opacity text-outline-black ${isActive('/gallery') ? 'text-white' : 'text-outline-black'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Gallery
               </Link>
               <Link
                 href="/articles"
-                className={`hover:text-gray-300 transition-colors ${
-                  isScrolled ? 'text-gray-900' : 'text-white'
-                }`}
+                className={`hover:opacity-80 transition-opacity text-outline-black ${isActive('/articles') ? 'text-white' : 'text-outline-black'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Articles
@@ -70,68 +69,119 @@ export function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-              className={`md:hidden transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className={`md:hidden transition-opacity text-outline-black`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? (
+                <X size={24} />
+              ) : (
+                <IconMenu3 size={24} className="bg-black/20 p-[0.5px] rounded text-outline-black" />
+              )}
             </button>
           </div>
         </nav>
       </header>
 
       {/* Full Screen Mobile Menu */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
-          {/* Backdrop */}
-          <div
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-            onClick={() => setIsMenuOpen(false)}
-          />
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div 
+            className="fixed inset-0 z-50 md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Backdrop */}
+            <motion.div
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+              onClick={() => setIsMenuOpen(false)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            />
 
-          {/* Menu Content */}
-          <div className="relative h-full bg-white">
-            <div className="flex items-center justify-between p-4 border-b">
-              <div className="font-bold text-lg text-gray-900">
-                HON. ADE ADEOGUN
-              </div>
-              <button
-                onClick={() => setIsMenuOpen(false)}
-                className="text-gray-900"
-                aria-label="Close menu"
+            {/* Menu Content */}
+            <div className="relative h-fit flex">
+              <motion.div 
+                className="bg-[#021D14] rounded-b-3xl shadow-sm w-full flex flex-col overflow-hidden"
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -100, opacity: 0 }}
+                transition={{ 
+                  type: "spring", 
+                  stiffness: 300, 
+                  damping: 30,
+                  duration: 0.4 
+                }}
               >
-                <X size={24} />
-              </button>
-            </div>
+                <div className="flex items-center justify-between p-5">
+                  <div className="font-bold text-lg text-white">
+                    HON. ADE ADEOGUN
+                  </div>
+                  <button
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-white"
+                    aria-label="Close menu"
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
+                <div aria-hidden="true" className="border-t border-white/10" />
 
-            <div className="flex flex-col p-6 space-y-6">
-              <Link
-                href="/"
-                className="text-2xl font-semibold text-gray-900 hover:text-gray-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/gallery"
-                className="text-2xl font-semibold text-gray-900 hover:text-gray-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Gallery
-              </Link>
-              <Link
-                href="/articles"
-                className="text-2xl font-semibold text-gray-900 hover:text-gray-600 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Articles
-              </Link>
+                <motion.div 
+                  className="flex flex-col p-6 space-y-6"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.4 }}
+                >
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/"
+                      className={`text-lg text-white hover:text-white/80 transition-colors ${isActive('/') ? 'text-white font-semibold' : 'text-auto-contrast'}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Home
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.4, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/gallery"
+                      className={`text-lg text-white hover:text-white/80 transition-colors ${isActive('/gallery') ? 'text-white font-semibold' : 'text-auto-contrast'}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Gallery
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.5, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/articles"
+                      className={`text-lg text-white hover:text-white/80 transition-colors ${isActive('/articles') ? 'text-white font-semibold' : 'text-auto-contrast'}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Articles
+                    </Link>
+                  </motion.div>
+                </motion.div>
+              </motion.div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

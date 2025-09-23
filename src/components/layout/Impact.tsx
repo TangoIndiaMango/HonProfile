@@ -138,7 +138,7 @@ function ImpactCard({
             variants={popIcon}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: '-100px' }}
+            viewport={{ once: true, margin: '100px' }}
           >
             <Icon className="w-6 h-6 text-white" />
           </motion.div>

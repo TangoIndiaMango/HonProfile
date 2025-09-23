@@ -6,7 +6,7 @@ export function ArticlesHero() {
       <div className="container mx-auto px-4 lg:px-16 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Title */}
-          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 uppercase tracking-wide">
+          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-6 uppercase tracking-wide">
             INSIGHTS & ARTICLES
           </h1>
 

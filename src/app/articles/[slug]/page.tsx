@@ -1,4 +1,3 @@
-
 'use client';
 
 import { SingleArticleContent } from '@/components/articles/SingleArticleContent';
@@ -24,13 +23,21 @@ export default function SingleArticlePage({ params }: SingleArticlePageProps) {
         title={article.title}
         excerpt={article.excerpt}
         image={article.image}
-        author={"Hon. Ade Adeogun"}
+        author={'Hon. Ade Adeogun'}
         readTime={article.readTime}
-        publishDate={new Date(article.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
+        publishDate={new Date(article.date).toLocaleDateString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })}
         category={article.category}
       />
-      {article.content && <SingleArticleContent content={article.content} />}
-      <Insights />
+      {article.content && (
+        <div className="max-w-7xl mx-auto bg-gray-50">
+          <SingleArticleContent content={article.content} />
+          <Insights />
+        </div>
+      )}
     </>
   );
 }
