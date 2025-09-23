@@ -66,9 +66,9 @@ export const articles: ArticleItem[] = [
       {
         "id": "representation-limitations",
         "title": "Where Representation Has Gaps",
-        "content": "Despite these positives, there are limitations or areas less addressed in his record (from what I found):\n\n- Physical infrastructure: There’s less evidence of large scale infrastructure revitalization in Akoko North or broader Ondo North under him; his work seems more on trainings, advocacy, and community-level interventions.\n- Continuity: Since his term ended in 2023 and he was succeeded by Adegboyega Adefarati, there may be gaps in long-term projects or initiatives needing follow-through. \n- Representation to some extent limited to his constituency; what people in other parts of Ondo North expect may differ, and his influence is stronger in Akoko South East/South West where he served."
-
+        "content": "Hon. Ade Adeogun’s official mandate was to represent Akoko South-East/South-West in the House of Representatives. Within those boundaries, his emphasis on youth empowerment, security advocacy, and human capital development was clear. Yet, representation often sparks wider expectations across Ondo North. Adeogun stepped beyond his immediate base. Through trainings, public security debates, and constituency programmes that opened opportunities to youths outside his constituency, he showed a willingness to extend his influence. Still, the scale of these interventions was naturally limited by resources, tenure, and jurisdiction. The real gap is therefore not neglect, but the inevitable boundary between what one representative can do and the larger demands of an entire senatorial district."
       },
+
       {
         "id": "expectations-for-better-representation",
         "title": "What Constituents Should Expect Going Forward",
