@@ -1,8 +1,56 @@
+'use client';
 import { Button } from '@/components/ui/button';
-import { Linkedin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 import { Separator } from '../ui/separator';
+import { motion, AnimatePresence } from 'framer-motion';
+import FollowButtonAction from './FollowButtonAction';
 
 export function Footer() {
+  const [showSocialMenu, setShowSocialMenu] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setShowSocialMenu(false);
+      }
+    }
+
+    if (showSocialMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showSocialMenu]);
+
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      url: 'https://ca.linkedin.com/in/ade-adeogun-61234241',
+      icon: Linkedin,
+      color: 'from-blue-500 to-blue-600',
+      hoverColor: 'hover:from-blue-400 hover:to-blue-500',
+    },
+    {
+      name: 'Facebook',
+      url: 'https://m.facebook.com/people/Hon-Adejoro-Adeogun/100039807197441/',
+      icon: Facebook,
+      color: 'from-blue-600 to-blue-700',
+      hoverColor: 'hover:from-blue-500 hover:to-blue-600',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/p/DFh9rUNt3jq/',
+      icon: Instagram,
+      color: 'from-pink-500 to-purple-600',
+      hoverColor: 'hover:from-pink-400 hover:to-purple-500',
+    },
+  ];
+
   return (
     <>
       {/* CTA Section */}
@@ -29,12 +77,24 @@ export function Footer() {
               Your voice matters. Join a growing network of people who want to
               see real change in Ondo State and across Nigeria.
             </p>
-            <Button
-              size="lg"
-              className="bg-white rounded-full text-black hover:bg-gray-100 font-semibold px-8 py-4 text-md"
-            >
-              Follow Adeogun
-            </Button>
+
+            {/* Add space for the semi-circle menu */}
+            <div className="h-32 mb-8"></div>
+            <div className="relative" ref={menuRef}>
+              <Button
+                size="lg"
+                onClick={() => setShowSocialMenu(!showSocialMenu)}
+                className="bg-white rounded-full text-black hover:bg-gray-100 font-semibold px-8 py-4 text-md transition-all duration-300 hover:scale-105"
+              >
+                Follow Adeogun
+              </Button>
+
+              {/* Rainbow Social Menu - Semi Circle */}
+              <FollowButtonAction
+                showSocialMenu={showSocialMenu}
+                socialLinks={socialLinks}
+              />
+            </div>
           </div>
         </div>
         {/* Bottom Social Bar pinned to bottom */}
@@ -53,28 +113,27 @@ export function Footer() {
                 {/* Social Links */}
                 <div className="flex items-center space-x-6">
                   <a
-                    href="#"
+                    href="https://ca.linkedin.com/in/ade-adeogun-61234241"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white hover:text-gray-300 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="w-6 h-6 text-white" />
                   </a>
                   <a
-                    href="#"
+                    href="https://m.facebook.com/people/Hon-Adejoro-Adeogun/100039807197441/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white hover:text-gray-300 transition-colors"
                     aria-label="Facebook"
                   >
                     <Facebook className="w-6 h-6 text-white" />
                   </a>
                   <a
-                    href="#"
-                    className="text-white hover:text-gray-300 transition-colors"
-                    aria-label="Twitter"
-                  >
-                    <Twitter className="w-6 h-6 text-white" />
-                  </a>
-                  <a
-                    href="#"
+                    href="https://www.instagram.com/p/DFh9rUNt3jq/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white hover:text-gray-300 transition-colors"
                     aria-label="Instagram"
                   >
