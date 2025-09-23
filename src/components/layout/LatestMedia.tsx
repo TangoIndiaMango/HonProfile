@@ -31,7 +31,7 @@ const mediaItems = [
   {
     id: 4,
     type: 'video' as const,
-    src: galleryVideos[1]?.thumbnail ?? '/images/6b048a09dd0ce7bf4f71d0836c6ded50e01ad929.png',
+    src: '/images/6b048a09dd0ce7bf4f71d0836c6ded50e01ad929.png',
     alt: galleryVideos[1]?.title ?? 'Featured video',
     videoUrl: galleryVideos[1]?.embedUrl ?? 'https://www.youtube-nocookie.com/embed/pWotPmmjfEk?si=xcjsiXwC-UrOmxMb',
   },
