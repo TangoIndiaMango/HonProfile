@@ -1,4 +1,3 @@
-import { ChevronDown } from 'lucide-react';
 
 export function GalleryHero() {
   return (

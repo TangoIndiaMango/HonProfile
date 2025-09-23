@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 interface SingleArticleHeroProps {
@@ -14,9 +13,7 @@ interface SingleArticleHeroProps {
 
 export function SingleArticleHero({
   title,
-  excerpt,
   image,
-  author,
   readTime,
   publishDate,
   category,

@@ -1,12 +1,12 @@
 'use client';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, X } from 'lucide-react';
-import { motion } from 'framer-motion';
-import type { Variants } from 'framer-motion';
-import { useState } from 'react';
 import { galleryVideos } from '@/data/videos';
+import type { Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
+import { ArrowRight, Play, X } from 'lucide-react';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const mediaItems = [
   {
@@ -234,28 +234,28 @@ export function LatestMedia() {
   );
 }
 
-function MediaThumbnail({
-  type,
-  src,
-  alt,
-}: {
-  type: 'image' | 'video';
-  src: string;
-  alt: string;
-}) {
-  return (
-    <div className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer">
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className="object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      {type === 'video' && (
-        <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <Play className="w-6 h-6 text-white" />
-        </div>
-      )}
-    </div>
-  );
-}
+// function MediaThumbnail({
+//   type,
+//   src,
+//   alt,
+// }: {
+//   type: 'image' | 'video';
+//   src: string;
+//   alt: string;
+// }) {
+//   return (
+//     <div className="relative aspect-square rounded-lg overflow-hidden group cursor-pointer">
+//       <Image
+//         src={src}
+//         alt={alt}
+//         fill
+//         className="object-cover group-hover:scale-105 transition-transform duration-300"
+//       />
+//       {type === 'video' && (
+//         <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+//           <Play className="w-6 h-6 text-white" />
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
