@@ -2,7 +2,7 @@ import { Search } from 'lucide-react';
 
 export function ArticlesHero() {
   return (
-    <section className="py-16 lg:py-24 bg-[#021D14]">
+    <section className="py-16 lg:py-24 bg-[#021D14] flex flex-col items-center justify-center">
       <div className="container mx-auto px-4 lg:px-16 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Title */}

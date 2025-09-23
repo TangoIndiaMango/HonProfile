@@ -59,10 +59,10 @@ export function GalleryVideos() {
         </div>
 
         {/* Mobile: Horizontal Scroll */}
-        <div className="block lg:hidden">
+            <div className="block lg:hidden relative z-10">
           <motion.div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide"
+                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto"
             drag="x"
             dragConstraints={{ left: -1200, right: 0 }}
             dragElastic={0.1}

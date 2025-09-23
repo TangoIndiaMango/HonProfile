@@ -21,16 +21,20 @@ export function Navbar() {
     <>
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-50 py-1 lg:px-16">
-        <nav className={`transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg py-2' 
-            : ' py-1'
-        }`}>
-          <Link href="/" className="flex items-center justify-between p-4 lg:px-6">
-            <div className={`font-bold text-lg lg:text-xl transition-colors ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            }`}>
-              HON. ADE ADEOGUN
+        <nav
+          className={`transition-all duration-300 ${
+            isScrolled
+              ? 'bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg py-2'
+              : ' py-1'
+          }`}
+        >
+          <div className="flex items-center justify-between p-4 lg:px-6">
+            <div
+              className={`font-bold text-lg lg:text-xl transition-colors ${
+                isScrolled ? 'text-gray-900' : 'text-white'
+              }`}
+            >
+              <Link href="/">HON. ADE ADEOGUN</Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -74,7 +78,7 @@ export function Navbar() {
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-          </Link>
+          </div>
         </nav>
       </header>
 
@@ -82,11 +86,11 @@ export function Navbar() {
       {isMenuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           {/* Backdrop */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => setIsMenuOpen(false)}
           />
-          
+
           {/* Menu Content */}
           <div className="relative h-full bg-white">
             <div className="flex items-center justify-between p-4 border-b">
@@ -101,7 +105,7 @@ export function Navbar() {
                 <X size={24} />
               </button>
             </div>
-            
+
             <div className="flex flex-col p-6 space-y-6">
               <Link
                 href="/"

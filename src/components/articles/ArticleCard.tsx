@@ -29,7 +29,7 @@ export function ArticleCard({
   
   return (
     <Link href={`/articles/${articleSlug}`}>
-      <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB]">
+      <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB] mb-3">
       {/* Article Image */}
       <div className="relative aspect-[5/2] overflow-hidden">
         <Image

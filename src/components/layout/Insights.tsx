@@ -78,9 +78,9 @@ export function Insights({
         </div>
 
         {/* Articles Grid - Horizontal scroll on mobile, grid on desktop */}
-        <div className="block md:hidden">
+        <div className="block md:hidden relative z-10">
           <motion.div
-            className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide"
+            className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto"
             drag="x"
             dragConstraints={{ left: -800, right: 0 }}
             dragElastic={0.1}

@@ -4,9 +4,9 @@ import { articles } from '@/data/articles';
 export function ArticlesGrid() {
   return (
     <section className="py-8 lg:py-16 bg-gray-50">
-      <div className="container mx-auto px-4 lg:px-16">
+      <div className="container mx-auto px-4 lg:px-16 gap-3">
         {/* Desktop Grid Layout */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           {/* Row 1: 2 large cards */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {articles.slice(0, 2).map(article => (
@@ -37,7 +37,7 @@ export function ArticlesGrid() {
         </div>
 
         {/* Mobile Layout - Single Column */}
-        <div className="md:hidden space-y-6">
+        <div className="md:hidden space-y-5 gap-3">
           {articles.map(article => (
             <ArticleCard key={article.id} {...article} />
           ))}

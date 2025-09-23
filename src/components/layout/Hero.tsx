@@ -53,7 +53,7 @@ export function Hero() {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-start overflow-hidden"
+      className="relative min-h-dvh flex items-center justify-start overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
