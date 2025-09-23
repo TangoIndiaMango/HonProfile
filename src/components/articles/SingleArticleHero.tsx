@@ -22,7 +22,7 @@ export function SingleArticleHero({
     <section className="relative min-h-[600px] lg:min-h-[650px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/90 z-10" />
         <div
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{

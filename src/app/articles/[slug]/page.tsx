@@ -32,12 +32,10 @@ export default function SingleArticlePage({ params }: SingleArticlePageProps) {
         })}
         category={article.category}
       />
-      {article.content && (
-        <div className="max-w-7xl mx-auto bg-gray-50">
-          <SingleArticleContent content={article.content} />
-          <Insights />
-        </div>
-      )}
+      <div className="max-w-7xl mx-auto bg-gray-50">
+        {article.content && <SingleArticleContent content={article.content} />}
+        <Insights />
+      </div>
     </>
   );
 }

@@ -28,7 +28,7 @@ export function ArticleCard({
   const articleSlug = slug || `article-${title.toLowerCase().replace(/\s+/g, '-')}`;
   
   return (
-    <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB] mb-3 h-[400px] flex flex-col">
+    <article className="bg-white rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-shadow duration-300 group cursor-pointer border border-[#DBDBDB] mb-3 min-h-[400px] flex flex-col">
       {/* Article Image */}
       <div className="relative aspect-[5/2] overflow-hidden flex-shrink-0">
         <Image
