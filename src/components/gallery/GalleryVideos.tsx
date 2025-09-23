@@ -60,15 +60,10 @@ export function GalleryVideos() {
 
         {/* Mobile: Horizontal Scroll */}
             <div className="block lg:hidden relative z-10">
-          <motion.div
-            ref={scrollRef}
-                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto"
-            drag="x"
-            dragConstraints={{ left: -1200, right: 0 }}
-            dragElastic={0.1}
-            style={{ cursor: 'grab' }}
-            whileDrag={{ cursor: 'grabbing' }}
-          >
+              <motion.div
+                ref={scrollRef}
+                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto snap-x snap-mandatory overscroll-x-contain touch-pan-x"
+              >
             {videos.map((video) => (
               <div key={video.id} className="flex-shrink-0 w-[283px] h-[350px]">
                 <div 

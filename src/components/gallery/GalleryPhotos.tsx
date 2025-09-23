@@ -80,22 +80,17 @@ export function GalleryPhotos() {
 
         {/* Mobile: Horizontal Scroll */}
             <div className="block lg:hidden relative z-10">
-          <motion.div
-                ref={scrollRef}
-                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto"
-            drag="x"
-            dragConstraints={{ left: -1200, right: 0 }}
-            dragElastic={0.1}
-            style={{ cursor: 'grab' }}
-            whileDrag={{ cursor: 'grabbing' }}
-          >
-            {photos.map(photo => (
               <motion.div
-                key={photo.id}
-                className="flex-shrink-0 w-[283px] h-[350px]"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
+                ref={scrollRef}
+                className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto snap-x snap-mandatory overscroll-x-contain touch-pan-x"
               >
+            {photos.map(photo => (
+                  <motion.div
+                    key={photo.id}
+                    className="flex-shrink-0 w-[283px] h-[350px] snap-start"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                  >
                 <div className="relative w-full h-full rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-300">
                   <Image
                     src={photo.src}

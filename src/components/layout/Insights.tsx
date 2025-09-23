@@ -80,15 +80,10 @@ export function Insights({
         {/* Articles Grid - Horizontal scroll on mobile, grid on desktop */}
         <div className="block md:hidden relative z-10">
           <motion.div
-            className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto"
-            drag="x"
-            dragConstraints={{ left: -800, right: 0 }}
-            dragElastic={0.1}
-            style={{ cursor: 'grab' }}
-            whileDrag={{ cursor: 'grabbing' }}
+            className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide pointer-events-auto snap-x snap-mandatory overscroll-x-contain touch-pan-x"
           >
             {articles.map(article => (
-              <div key={article.id} className="flex-shrink-0 w-[280px]">
+              <div key={article.id} className="flex-shrink-0 w-[280px] snap-start">
                 <ArticleCard {...article} />
               </div>
             ))}
