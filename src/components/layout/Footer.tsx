@@ -107,6 +107,22 @@ export function Footer() {
                   <h3 className="text-xl font-bold text-white">
                     HON. ADE ADEOGUN
                   </h3>
+                 
+                </div>
+
+                <div>
+                <p className="text-sm text-white/70 mt-2">
+                    Website by{' '}
+                    <a 
+                      href="https://www.emicrafttech.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="font-semibold text-white hover:text-white/80 transition-colors underline decoration-white/50 hover:decoration-white/80"
+                    >
+                      emicrafttech
+                    </a>
+                    {' '}© {new Date().getFullYear()}
+                  </p>
                 </div>
 
                 {/* Social Links */}

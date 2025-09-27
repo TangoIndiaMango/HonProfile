@@ -192,7 +192,7 @@ export const articles: ArticleItem[] = [
     title: 'The Adeogun Example: A Legacy of Empowerment',
     excerpt:
       'How effective leadership can transform communities and inspire positive change.',
-    image: '/images/8cf4071487dc04e0a764fba07dabde19d00315fa.png',
+    image: '/images/new/106023706_111396610631173_6299891410128103356_n 1.png',
     readTime: '5 min read',
     date: '2025-06-15',
     category: 'Leadership',
@@ -280,7 +280,7 @@ export const articles: ArticleItem[] = [
     "id": 6,
     "title": "Unity & Tough Choices: Adeogun’s Take on Party Strength and Policy Pain",
     "excerpt": "Why unity matters in politics, and how difficult but necessary policies, though painful, are often unavoidable according to Hon. Ade Adeogun.",
-    "image": "/images/c3a453add729b0c04ec8ba38108a2ad2092031e3.png",
+    "image": "/images/new/speech.png",
     "readTime": "4 min read",
     "date": "2025-07-05",
     "category": "Leadership & Policy",

@@ -13,7 +13,7 @@ const heroSlides = [
   },
   {
     id: 2,
-    image: '/images/58a8fa5256d17044323abe66ce182d913a80f9e0.png',
+    image: '/images/new/speech.png',
     title: 'COMMUNITY CHAMPION:',
     subtitle: 'BUILDING BRIDGES, CREATING OPPORTUNITIES.',
     tagline: 'Community • Development • Progress'

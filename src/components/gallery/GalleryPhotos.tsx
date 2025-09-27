@@ -17,45 +17,9 @@ import {
 import Image from 'next/image';
 import { useMemo, useRef, useState } from 'react';
 import { Button } from '../ui/button';
+import { photos } from '@/data/photos';
 
-const photos = [
-  {
-    id: 1,
-    src: '/images/58a8fa5256d17044323abe66ce182d913a80f9e0.png',
-    alt: 'Community meeting',
-    height: 280,
-  },
-  {
-    id: 2,
-    src: '/images/27223f5f42dd79ac8eaa337d3740b52f5744a5e9.png',
-    alt: 'Public address',
-    height: 320,
-  },
-  {
-    id: 3,
-    src: '/images/bc90180fdc8c990e73bb7d8dc6b59d8d20abebf5.png',
-    alt: 'Community event',
-    height: 240,
-  },
-  {
-    id: 4,
-    src: '/images/6b048a09dd0ce7bf4f71d0836c6ded50e01ad929.png',
-    alt: 'Official meeting',
-    height: 360,
-  },
-  {
-    id: 5,
-    src: '/images/a589f389fa45546e2bf18d35485473b399ff32dc.png',
-    alt: 'Policy discussion',
-    height: 290,
-  },
-  {
-    id: 6,
-    src: '/images/731247c8c4e4a0befb1336c2bb7257f5f62bd28e.png',
-    alt: 'Youth engagement',
-    height: 310,
-  },
-];
+
 
 export function GalleryPhotos() {
   const scrollRef = useRef<HTMLDivElement>(null);
