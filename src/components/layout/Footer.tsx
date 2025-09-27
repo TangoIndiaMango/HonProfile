@@ -101,27 +101,26 @@ export function Footer() {
           <Separator className="w-full bg-white/30" />
           <footer className="py-6 lg:py-8">
             <div className="container mx-auto px-4 lg:px-16">
-              <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 {/* Brand */}
                 <div className="mb-6 md:mb-0">
                   <h3 className="text-xl font-bold text-white">
                     HON. ADE ADEOGUN
                   </h3>
-                 
                 </div>
 
                 <div>
-                <p className="text-sm text-white/70 mt-2">
+                  <p className="text-sm text-white/70 mt-2">
                     Website by{' '}
-                    <a 
-                      href="https://www.emicrafttech.com/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.emicrafttech.com/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="font-semibold text-white hover:text-white/80 transition-colors underline decoration-white/50 hover:decoration-white/80"
                     >
                       emicrafttech
-                    </a>
-                    {' '}© {new Date().getFullYear()}
+                    </a>{' '}
+                    © {new Date().getFullYear()}
                   </p>
                 </div>
 
