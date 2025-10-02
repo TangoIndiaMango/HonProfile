@@ -20,11 +20,18 @@ const heroSlides = [
   },
   {
     id: 3,
-    image: '/images/hero-2.svg',
+    image: '/recieved/adeogun-bill.png',
     title: 'VOICE OF THE PEOPLE:',
     subtitle: 'REPRESENTING WITH INTEGRITY AND PURPOSE.',
     tagline: 'Representation • Integrity • Service'
-  }
+  },
+  {
+    id: 5,
+    image: '/images/hero-2.svg',
+    title: 'HON. ADE ADEOGUN:',
+    subtitle: 'SERVING THE PEOPLE.',
+    tagline: 'Dedicated • Transparent • Results-Driven'
+  },
 ];
 
 export function Hero() {
