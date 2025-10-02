@@ -1,10 +1,11 @@
-import { Hero } from '@/components/layout/Hero';
+import { AchievementsHome } from '@/components/achievements/AchievementsHome';
 import { About } from '@/components/layout/About';
-import { Vision } from '@/components/layout/Vision';
+import { Hero } from '@/components/layout/Hero';
 import { Impact } from '@/components/layout/Impact';
+import { Insights } from '@/components/layout/Insights';
 import { LatestMedia } from '@/components/layout/LatestMedia';
 import { Quote } from '@/components/layout/Quote';
-import { Insights } from '@/components/layout/Insights';
+import { Vision } from '@/components/layout/Vision';
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <About />
       <Vision />
       <Impact />
+
+      <AchievementsHome />
       <LatestMedia />
       <Quote />
       <Insights />

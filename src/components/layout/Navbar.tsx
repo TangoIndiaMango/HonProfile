@@ -65,6 +65,13 @@ export function Navbar() {
               >
                 Articles
               </Link>
+              <Link
+                href="/achievements"
+                className={`hover:opacity-80 transition-opacity text-outline-black ${isActive('/achievements') ? 'text-white' : 'text-outline-black'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Achievements
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -174,6 +181,19 @@ export function Navbar() {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Articles
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.6, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/achievements"
+                      className={`text-lg text-white hover:text-white/80 transition-colors ${isActive('/achievements') ? 'text-white font-semibold' : 'text-auto-contrast'}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Achievements
                     </Link>
                   </motion.div>
                 </motion.div>
