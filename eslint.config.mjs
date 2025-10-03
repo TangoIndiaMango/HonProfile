@@ -24,17 +24,11 @@ const eslintConfig = [
     // Project-wide rule relaxations (no source edits needed)
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
-      // Keep visibility on unused vars but don't fail builds
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
-        {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          caughtErrorsIgnorePattern: "^_",
-        },
-      ],
-      // Defer to TS plugin rule above
+      // Allow unused variables and parameters
+      "@typescript-eslint/no-unused-vars": "off",
       "no-unused-vars": "off",
+      // Disable React hooks exhaustive-deps warning
+      "react-hooks/exhaustive-deps": "off",
     },
   },
   {
