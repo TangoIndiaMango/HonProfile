@@ -12,7 +12,7 @@ import type { Variants } from 'framer-motion';
 const impactData = [
   {
     icon: GraduationCap,
-    title: 'Scholarships for 400 Students',
+    title: 'Scholarships for 500 Students',
     description:
       'Supported indigent youths at Upland College of Education, Ipesi Akoko with full and partial scholarships to boost access to quality education.',
   },

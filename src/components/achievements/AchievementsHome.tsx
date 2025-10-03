@@ -173,16 +173,27 @@ export function AchievementsHome() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-center"
+          className="text-center space-y-4"
         >
-          <Link href="/achievements">
-            <Button
-              size="lg"
-              className="rounded-full bg-black hover:bg-black/90 text-white px-4 py-2 text-sm transition-all duration-300 hover:scale-105"
-            >
-              View More <ArrowRight className="w-8 h-8" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/achievements">
+              <Button
+                size="lg"
+                className="rounded-full bg-black hover:bg-black/90 text-white px-4 py-2 text-sm transition-all duration-300 hover:scale-105"
+              >
+                View More Achievements <ArrowRight className="w-8 h-8" />
+              </Button>
+            </Link>
+            <Link href="/constituency-service">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full border-black text-black hover:bg-black hover:text-white px-4 py-2 text-sm transition-all duration-300 hover:scale-105"
+              >
+                Constituency Service <ArrowRight className="w-8 h-8" />
+              </Button>
+            </Link>
+          </div>
         </motion.div>
       </div>
 

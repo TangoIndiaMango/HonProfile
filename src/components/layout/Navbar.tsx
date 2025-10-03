@@ -72,6 +72,13 @@ export function Navbar() {
               >
                 Achievements
               </Link>
+              <Link
+                href="/constituency-service"
+                className={`hover:opacity-80 transition-opacity text-outline-black ${isActive('/constituency-service') ? 'text-white' : 'text-outline-black'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Constituency Service
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -194,6 +201,19 @@ export function Navbar() {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Achievements
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.7, duration: 0.3 }}
+                  >
+                    <Link
+                      href="/constituency-service"
+                      className={`text-lg text-white hover:text-white/80 transition-colors ${isActive('/constituency-service') ? 'text-white font-semibold' : 'text-auto-contrast'}`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Constituency Service
                     </Link>
                   </motion.div>
                 </motion.div>
