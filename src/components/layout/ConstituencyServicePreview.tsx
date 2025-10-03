@@ -162,7 +162,7 @@ export function ConstituencyServicePreview() {
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <Link href="/constituency-service/aides">
                     <Button variant="outline" className="w-full border-gray-200 hover:bg-gray-50">
-                      View All 68 Aides
+                      View All Aides
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>

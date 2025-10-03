@@ -56,16 +56,16 @@ export function BeneficiariesTable() {
         </div>
       ),
     },
-    {
-      key: 'amount',
-      label: 'Amount',
-      render: value =>
-        value ? (
-          <div className="text-green-600 font-semibold">{value}</div>
-        ) : (
-          <span className="text-gray-400">N/A</span>
-        ),
-    },
+    // {
+    //   key: 'amount',
+    //   label: 'Amount',
+    //   render: value =>
+    //     value ? (
+    //       <div className="text-green-600 font-semibold">{value}</div>
+    //     ) : (
+    //       <span className="text-gray-400">N/A</span>
+    //     ),
+    // },
     {
       key: 'status',
       label: 'Status',
@@ -103,18 +103,18 @@ export function BeneficiariesTable() {
       icon: CheckCircle,
       iconColor: 'text-green-600',
     },
-    {
-      title: 'Total Investment',
-      value: `₦${beneficiaries
-        .reduce((sum, b) => {
-          const amount = b.amount ? parseInt(b.amount.replace(/[₦,]/g, '')) : 0;
-          return sum + amount;
-        }, 0)
-        .toLocaleString()}`,
-      description: 'Total amount invested',
-      icon: DollarSign,
-      iconColor: 'text-purple-600',
-    },
+    // {
+    //   title: 'Total Investment',
+    //   value: `₦${beneficiaries
+    //     .reduce((sum, b) => {
+    //       const amount = b.amount ? parseInt(b.amount.replace(/[₦,]/g, '')) : 0;
+    //       return sum + amount;
+    //     }, 0)
+    //     .toLocaleString()}`,
+    //   description: 'Total amount invested',
+    //   icon: DollarSign,
+    //   iconColor: 'text-purple-600',
+    // },
   ];
 
   // Badge color helpers
@@ -208,17 +208,17 @@ export function BeneficiariesTable() {
           <span className="text-gray-400">Not provided</span>
         ),
     },
-    {
-      key: 'amount',
-      label: 'Amount/Value',
-      icon: DollarSign,
-      render: (value: string) =>
-        value ? (
-          <div className="text-green-600 font-semibold text-lg">{value}</div>
-        ) : (
-          <span className="text-gray-400">No monetary value</span>
-        ),
-    },
+    // {
+    //   key: 'amount',
+    //   label: 'Amount/Value',
+    //   icon: DollarSign,
+    //   render: (value: string) =>
+    //     value ? (
+    //       <div className="text-green-600 font-semibold text-lg">{value}</div>
+    //     ) : (
+    //       <span className="text-gray-400">No monetary value</span>
+    //     ),
+    // },
     {
       key: 'date',
       label: 'Program Date',

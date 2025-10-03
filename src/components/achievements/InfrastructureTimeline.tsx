@@ -2,8 +2,9 @@
 import { IconArrowLeft, IconArrowRight, IconChecks } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { Clock } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AchievmentMedia } from './AchievmentMedia';
+import { useSearchParams } from 'next/navigation';
 
 interface InfrastructureTimelineProps {
   projects: Array<{
@@ -30,8 +31,20 @@ interface InfrastructureTimelineProps {
 export function InfrastructureTimeline({
   projects,
 }: InfrastructureTimelineProps) {
+  const params = useSearchParams();
+  const show = params.get('show');
   const [showAll, setShowAll] = useState(false);
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  useEffect(() => {
+    const timeline = document.getElementById('infrastructure-timeline');
+    if (show === 'infrastructure') {
+      timeline?.scrollIntoView({ behavior: 'smooth' });
+    }
+    return () => {
+      timeline?.scrollIntoView({ behavior: 'smooth' });
+    };
+  }, [show]);
 
   const currentProject = projects[currentProjectIndex];
   const totalProjects = projects.length;
@@ -62,7 +75,10 @@ export function InfrastructureTimeline({
           />
         </div>
 
-        <div className="container mx-auto px-4 lg:px-16 relative z-10">
+        <div
+          className="container mx-auto px-4 lg:px-16 relative z-10"
+          id="infrastructure-timeline"
+        >
           {/* Header */}
           <div className="flex items-center justify-between mb-16">
             <motion.h2

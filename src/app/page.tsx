@@ -1,6 +1,7 @@
 import { AchievementsHome } from '@/components/achievements/AchievementsHome';
 import { About } from '@/components/layout/About';
 import { ConstituencyServicePreview } from '@/components/layout/ConstituencyServicePreview';
+import { VideoCarousel } from '@/components/layout/VideoCarousel';
 import { Hero } from '@/components/layout/Hero';
 import { Impact } from '@/components/layout/Impact';
 import { InfrastructureShowcase } from '@/components/layout/InfrastructureShowcase';
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <VideoCarousel />
       <Vision />
       <Impact />
       <InfrastructureShowcase />
