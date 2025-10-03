@@ -114,7 +114,7 @@ export function VideoCarousel() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-600 max-w-3xl mx-auto"
           >
-            Watch Hon. Ade Adeogun's commitment to accountable leadership and community development
+            Watch Hon. Ade Adeogun&apos;s commitment to accountable leadership and community development
           </motion.p>
         </div>
 
