@@ -67,7 +67,7 @@ export function VoicesOfThePeople() {
             style={{ transform: `translateX(-${currentSlide * (100 / slidesPerView)}%)` }}
           >
             {testimonialMedia.map((media, index) => (
-              <div key={media.id} className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2">
+              <div key={media.id + index} className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

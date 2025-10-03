@@ -1,15 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Users, Briefcase, GraduationCap, Award, ArrowRight, MapPin, Phone } from 'lucide-react';
-import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { StatsCard } from '@/components/constituency/StatsCard';
-import { FeaturedAidesCard } from '@/components/constituency/FeaturedAidesCard';
-import { EmploymentHighlightsCard } from '@/components/constituency/EmploymentHighlightsCard';
-import { CallToAction } from '@/components/constituency/CallToAction';
+import { motion } from 'framer-motion';
+import { ArrowRight, Award, Briefcase, GraduationCap, MapPin, Users } from 'lucide-react';
+import Link from 'next/link';
 
 const previewStats = [
   {

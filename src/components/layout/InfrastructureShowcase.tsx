@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play, MapPin, Calendar } from 'lucide-react';
 import { VideoModal } from '@/components/VideoModal';
+import { motion } from 'framer-motion';
+import { Calendar, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const infrastructureProjects = [
   {
@@ -14,7 +14,7 @@ const infrastructureProjects = [
     date: 'July 2019',
     image: '/recieved/adeogun-office.png',
     description: 'Massive renovation of Oka Town Hall along Palace Road',
-    type: 'image'
+    type: 'image',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const infrastructureProjects = [
     date: 'July 2020',
     image: '/recieved/adeogun-gov.png',
     description: 'World Bank assisted community development project',
-    type: 'image'
+    type: 'image',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const infrastructureProjects = [
     date: 'June 2021',
     image: '/recieved/adeogun-look.png',
     description: 'Reconstruction with retention walls and line drains',
-    type: 'image'
+    type: 'image',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const infrastructureProjects = [
     date: 'June 2021',
     image: '/recieved/adeogun-rally.png',
     description: 'Construction with erosion control line drains',
-    type: 'image'
+    type: 'image',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const infrastructureProjects = [
     date: 'October 2021',
     image: '/recieved/adeogun-read.png',
     description: 'Massive renovation of Central Mosque',
-    type: 'image'
+    type: 'image',
   },
   {
     id: 6,
@@ -59,8 +59,8 @@ const infrastructureProjects = [
     date: '2021-2022',
     image: '/recieved/adeogun-with.png',
     description: 'Construction of 7KM road connecting communities',
-    type: 'image'
-  }
+    type: 'image',
+  },
 ];
 
 export function InfrastructureShowcase() {
@@ -68,11 +68,15 @@ export function InfrastructureShowcase() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % infrastructureProjects.length);
+    setCurrentIndex(prev => (prev + 1) % infrastructureProjects.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + infrastructureProjects.length) % infrastructureProjects.length);
+    setCurrentIndex(
+      prev =>
+        (prev - 1 + infrastructureProjects.length) %
+        infrastructureProjects.length
+    );
   };
 
   const currentProject = infrastructureProjects[currentIndex];
@@ -91,7 +95,9 @@ export function InfrastructureShowcase() {
             Infrastructure Interventions
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Building the foundation for progress through roads, bridges, town halls, and community facilities that serve the people of Akoko South East/South West Federal Constituency.
+            Building the foundation for progress through roads, bridges, town
+            halls, and community facilities that serve the people of Akoko South
+            East/South West Federal Constituency.
           </p>
         </motion.div>
 
@@ -116,7 +122,9 @@ export function InfrastructureShowcase() {
                 <div className="absolute bottom-4 left-4 text-white">
                   <div className="flex items-center gap-2 mb-2">
                     <MapPin className="w-4 h-4" />
-                    <span className="text-sm font-medium">{currentProject.location}</span>
+                    <span className="text-sm font-medium">
+                      {currentProject.location}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
@@ -133,17 +141,20 @@ export function InfrastructureShowcase() {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {currentProject.description}
                 </p>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="flex-1">
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div 
+                      <div
                         className="bg-blue-600 h-2 rounded-full transition-all duration-300"
-                        style={{ width: `${((currentIndex + 1) / infrastructureProjects.length) * 100}%` }}
+                        style={{
+                          width: `${((currentIndex + 1) / infrastructureProjects.length) * 100}%`,
+                        }}
                       />
                     </div>
                     <p className="text-sm text-gray-500 mt-2">
-                      {currentIndex + 1} of {infrastructureProjects.length} projects
+                      {currentIndex + 1} of {infrastructureProjects.length}{' '}
+                      projects
                     </p>
                   </div>
                 </div>
@@ -176,8 +187,8 @@ export function InfrastructureShowcase() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                index === currentIndex 
-                  ? 'bg-blue-600 scale-125' 
+                index === currentIndex
+                  ? 'bg-blue-600 scale-125'
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
               aria-label={`Go to project ${index + 1}`}
@@ -191,7 +202,7 @@ export function InfrastructureShowcase() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200"
-            onClick={() => window.location.href = '/achievements'}
+            onClick={() => (window.location.href = '/achievements')}
           >
             View All Infrastructure Projects
           </motion.button>
@@ -201,8 +212,8 @@ export function InfrastructureShowcase() {
       {/* Video Modal */}
       {selectedVideo && (
         <VideoModal
-          videoUrl={selectedVideo}
-          onClose={() => setSelectedVideo(null)}
+          selectedVideo={selectedVideo}
+          setSelectedVideo={setSelectedVideo as any}
         />
       )}
     </section>

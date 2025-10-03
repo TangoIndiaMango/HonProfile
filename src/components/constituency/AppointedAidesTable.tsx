@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Phone, MapPin, Users, Filter, Mail, Calendar, User, Shield, Award } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { ReusableTable, type TableColumn, type StatCard } from '@/components/common/table-comp/ReusableTable';
 import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
-import { appointedAides, aideCategories } from '@/data/appointedAides';
+import { ReusableTable, type StatCard, type TableColumn } from '@/components/common/table-comp/ReusableTable';
+import { Badge } from '@/components/ui/badge';
+import { aideCategories, appointedAides } from '@/data/appointedAides';
+import { Award, Calendar, Filter, MapPin, Phone, Shield, User, Users } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 export function AppointedAidesTable() {
   const [selectedAide, setSelectedAide] = useState<any>(null);

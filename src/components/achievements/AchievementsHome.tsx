@@ -94,7 +94,7 @@ export function AchievementsHome() {
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16"
         >
           {stats.map((stat, index) => (
-            <div key={stat.label} className="text-center">
+            <div key={stat.label + index} className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
                 <stat.icon className="w-8 h-8 text-white mx-auto mb-4" />
                 <div className="text-3xl lg:text-4xl font-bold text-white mb-2">

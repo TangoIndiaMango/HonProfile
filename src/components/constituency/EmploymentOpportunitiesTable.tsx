@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Phone, MapPin, Briefcase, Filter, Building, DollarSign, Calendar } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { ReusableTable, type TableColumn, type StatCard } from '@/components/common/table-comp/ReusableTable';
 import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
+import { ReusableTable, type StatCard, type TableColumn } from '@/components/common/table-comp/ReusableTable';
+import { Badge } from '@/components/ui/badge';
 import { employmentOpportunities } from '@/data/employmentOpportunities';
+import { Briefcase, Building, Calendar, Filter, MapPin, Phone } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 export function EmploymentOpportunitiesTable() {
   const [selectedEmployment, setSelectedEmployment] = useState<any>(null);

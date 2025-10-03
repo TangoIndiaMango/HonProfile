@@ -1,10 +1,10 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Play, FileText, Users, Shield, Calendar, ExternalLink } from 'lucide-react';
 import { VideoModal } from '@/components/VideoModal';
-
+import { motion } from 'framer-motion';
+import { Calendar, FileText, Play, Shield, Users } from 'lucide-react';
+import { useState } from 'react';
+import Image from 'next/image';
 const legislativeActivities = [
   {
     id: 1,
@@ -211,10 +211,11 @@ export function LegislativeInterventions() {
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="relative">
-                    <img
+                    <Image
                       src={video.thumbnail}
                       alt={video.title}
                       className="w-full h-48 object-cover"
+                      fill
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                       <button
@@ -255,7 +256,7 @@ export function LegislativeInterventions() {
               Stay Informed About Legislative Activities
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Follow Hon. Ade Adeogun's legislative journey and stay updated on bills, committee activities, and parliamentary proceedings.
+              Follow Hon. Ade Adeogun&apos;s legislative journey and stay updated on bills, committee activities, and parliamentary proceedings.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
@@ -278,8 +279,8 @@ export function LegislativeInterventions() {
       {/* Video Modal */}
       {selectedVideo && (
         <VideoModal
-          videoUrl={selectedVideo}
-          onClose={() => setSelectedVideo(null)}
+          selectedVideo={selectedVideo}
+          setSelectedVideo={setSelectedVideo as any}
         />
       )}
     </section>

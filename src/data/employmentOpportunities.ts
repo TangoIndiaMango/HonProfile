@@ -304,14 +304,32 @@ export const employmentOpportunities: EmploymentOpportunity[] = [
     address: 'OBA',
     phoneNumber: '',
     category: 'navy'
+  },
+
+  // Additional employment opportunities from the PDF
+  {
+    id: 36,
+    name: 'OLUWASEUN ADELEYE',
+    employer: 'FRSC',
+    address: 'ISUA',
+    phoneNumber: '',
+    category: 'other'
+  },
+  {
+    id: 37,
+    name: 'DESTINY .O. OGUNDAYISI',
+    employer: 'NIG. IMMIGRATION SERVICE',
+    address: 'OBA',
+    phoneNumber: '',
+    category: 'immigration'
   }
 ];
 
 export const employmentCategories = [
   { id: 'security', label: 'Security Agencies', count: 12 },
   { id: 'fire_service', label: 'Fire Service', count: 3 },
-  { id: 'immigration', label: 'Immigration Service', count: 2 },
+  { id: 'immigration', label: 'Immigration Service', count: 3 },
   { id: 'army', label: 'Nigerian Army', count: 3 },
   { id: 'navy', label: 'Nigerian Navy', count: 4 },
-  { id: 'other', label: 'Other Agencies', count: 13 }
+  { id: 'other', label: 'Other Agencies', count: 12 }
 ];

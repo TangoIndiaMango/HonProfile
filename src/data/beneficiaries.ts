@@ -11,261 +11,275 @@ export interface Beneficiary {
   description?: string;
 }
 
-// Comprehensive beneficiary data for constituency service
+// Real beneficiary data from Hon. Ade Adeogun's constituency service records
 export const beneficiaries: Beneficiary[] = [
-  // NPOWER Beneficiaries
+  // Lawyers Robe Award Beneficiaries (26th July, 2021) - 62 beneficiaries
   {
     id: 1,
-    name: 'Adeyemi Oluwaseun',
-    program: 'NPOWER Programme 2020/21',
-    category: 'npower',
-    date: '2020-06-15',
+    name: 'Inumoh Oyekolapo',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Akungba',
-    phoneNumber: '080****5678',
-    description: 'NPOWER Batch C beneficiary - Teaching'
+    town: 'Oka Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 2,
-    name: 'Ojo Blessing',
-    program: 'NPOWER Programme 2020/21',
-    category: 'npower',
-    date: '2020-06-15',
+    name: 'Orimolade Aderonke Bukola',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Isua',
-    phoneNumber: '081****6789',
-    description: 'NPOWER Batch C beneficiary - Health'
+    town: 'Ibaka Oka',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 3,
-    name: 'Akinwale Tunde',
-    program: 'NPOWER Programme 2020/21',
-    category: 'npower',
-    date: '2020-06-15',
+    name: 'Olubunmi William Sunday',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Oba',
-    phoneNumber: '082****7890',
-    description: 'NPOWER Batch C beneficiary - Agriculture'
+    town: 'Oka Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
-
-  // CBN Credit Facility Beneficiaries
   {
     id: 4,
-    name: 'Ajayi Funmi',
-    program: 'CBN Targeted Credit Facility (COVID-19 Loan)',
-    category: 'credit_facility',
-    date: '2020-08-20',
-    amount: '₦250,000',
+    name: 'Agbati Olawunmi Ayoola',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
     town: 'Epinmi',
-    phoneNumber: '083****8901',
-    description: 'Small business loan for trading'
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 5,
-    name: 'Ogunleye Kehinde',
-    program: 'CBN Targeted Credit Facility (COVID-19 Loan)',
-    category: 'credit_facility',
-    date: '2020-08-20',
-    amount: '₦500,000',
+    name: 'Alegbeleye Precious Oluwaseun',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Supare',
-    phoneNumber: '084****9012',
-    description: 'Agricultural business loan'
+    town: 'Oka Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
-
-  // Partnership Program Beneficiaries
   {
     id: 6,
-    name: 'Ogolo Adewale',
-    program: 'Empowerment with Nigeria Ports Authority (NPA)',
-    category: 'partnership',
-    date: '2020-01-23',
+    name: 'Shaba James Oluwaseyi',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Oka',
-    phoneNumber: '070****3381',
-    description: 'Port authority employment opportunity'
+    town: 'Oka Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 7,
-    name: 'Olarinde Femi',
-    program: 'Empowerment with Nigerian Film Corporation (NFC)',
-    category: 'partnership',
-    date: '2020-09-20',
+    name: 'Oloeuntobi John Adeniyi',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Oba',
-    phoneNumber: '080****4078',
-    description: 'Film production skills training'
+    town: 'Oka Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 8,
-    name: 'Emmanuel Abodunwa',
-    program: 'Empowerment with Industrial Training Fund (ITF)',
-    category: 'partnership',
-    date: '2021-08-06',
+    name: 'Omoboriola Daniel Segun',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Ikun',
-    phoneNumber: '080****6185',
-    description: 'Technical skills acquisition program'
+    town: 'Ipe Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
-
-  // Education Beneficiaries
   {
     id: 9,
-    name: 'Sasere Idris',
-    program: '2nd Batch Scholarship at Upland College of Education',
-    category: 'scholarship',
-    date: '2020-09-15',
+    name: 'Folayemi Oyindamola Helen',
+    program: 'Lawyers Robe Award',
+    category: 'award',
+    date: '2021-07-26',
     status: 'completed',
-    town: 'Isua',
-    phoneNumber: '070****7924',
-    description: 'Teacher education scholarship'
+    town: 'Etioro Supare',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
   },
   {
     id: 10,
-    name: 'Oluwaseesin Victor',
-    program: 'Bursary Award for Undergraduates',
-    category: 'bursary',
-    date: '2021-06-18',
-    amount: '₦50,000',
-    status: 'completed',
-    town: 'Oka',
-    phoneNumber: '081****0967',
-    description: 'Undergraduate bursary support'
-  },
-  {
-    id: 11,
-    name: 'Bayode Femi',
-    program: 'Postgraduate Scholarship',
-    category: 'scholarship',
-    date: '2021-03-10',
-    status: 'completed',
-    town: 'Oba',
-    phoneNumber: '070****6943',
-    description: 'Masters degree scholarship'
-  },
-
-  // Professional Awards
-  {
-    id: 12,
-    name: 'Oriyomi Adejoro',
+    name: 'Shaba Olamide David',
     program: 'Lawyers Robe Award',
     category: 'award',
     date: '2021-07-26',
     status: 'completed',
-    town: 'Akungba',
-    phoneNumber: '080****3364',
-    description: 'Professional robe for new lawyers'
+    town: 'Isua Akoko',
+    phoneNumber: '080****0000',
+    description: 'Professional robe for new lawyer'
+  },
+
+  // COVID Rapid Response Grant Beneficiaries - 150 beneficiaries
+  {
+    id: 11,
+    name: 'Bayode Ajayi',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
+    status: 'completed',
+    town: 'Oba',
+    phoneNumber: '080****4296',
+    description: 'COVID-19 emergency support grant'
+  },
+  {
+    id: 12,
+    name: 'Ogunloba Olubunmi',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
+    status: 'completed',
+    town: 'Oba',
+    phoneNumber: '081****4266',
+    description: 'COVID-19 emergency support grant'
   },
   {
     id: 13,
-    name: 'Jato Alaba',
-    program: 'Lawyers Robe Award',
-    category: 'award',
-    date: '2021-07-26',
+    name: 'Obasanmi Busayo',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Supare',
-    phoneNumber: '081****7156',
-    description: 'Professional robe for new lawyers'
+    town: 'Oba',
+    phoneNumber: '081****1322',
+    description: 'COVID-19 emergency support grant'
   },
-
-  // Women Grants
   {
     id: 14,
-    name: 'Apata Friday',
-    program: 'Grant for Women',
+    name: 'Damilola Abiola',
+    program: 'COVID Rapid Response Grant',
     category: 'grant',
-    date: '2020-11-15',
-    amount: '₦100,000',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Oka',
-    phoneNumber: '080****9913',
-    description: 'Women entrepreneurship grant'
+    town: 'Akoko SW',
+    phoneNumber: '090****5356',
+    description: 'COVID-19 emergency support grant'
   },
   {
     id: 15,
-    name: 'Musa Fatai',
-    program: 'Grant for Women',
+    name: 'Emmanuel Ogunleye',
+    program: 'COVID Rapid Response Grant',
     category: 'grant',
-    date: '2020-11-15',
-    amount: '₦75,000',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Oba',
-    phoneNumber: '081****7156',
-    description: 'Women empowerment grant'
+    town: 'Akoko SW',
+    phoneNumber: '091****0940',
+    description: 'COVID-19 emergency support grant'
   },
-
-  // Employment Beneficiaries
   {
     id: 16,
-    name: 'Ogunniye Olusola',
-    program: 'DSS Employment',
-    category: 'employment',
-    date: '2021-02-10',
+    name: 'Ajayi Olatunde',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Akungba',
-    phoneNumber: '081****4441',
-    description: 'Department of State Services employment'
+    town: 'Akoko SW',
+    phoneNumber: '070****7394',
+    description: 'COVID-19 emergency support grant'
   },
   {
     id: 17,
-    name: 'Ajagunna Ganiyu',
-    program: 'DSS Employment',
-    category: 'employment',
-    date: '2021-02-10',
+    name: 'Munirat Asunmo',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Ikare',
-    phoneNumber: '081****5025',
-    description: 'Department of State Services employment'
+    town: 'Akoko SW',
+    phoneNumber: '080****0870',
+    description: 'COVID-19 emergency support grant'
   },
   {
     id: 18,
-    name: 'Ajana Sherif-Deen',
-    program: 'DSS Employment',
-    category: 'employment',
-    date: '2021-02-10',
+    name: 'Blessing Ademolu',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
     status: 'completed',
-    town: 'Oba',
-    phoneNumber: '080****3364',
-    description: 'Department of State Services employment'
+    town: 'Akoko SE',
+    phoneNumber: '090****3325',
+    description: 'COVID-19 emergency support grant'
+  },
+  {
+    id: 19,
+    name: 'Michael Keru',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
+    status: 'completed',
+    town: 'Akoko SE',
+    phoneNumber: '080****8527',
+    description: 'COVID-19 emergency support grant'
+  },
+  {
+    id: 20,
+    name: 'Banke Adeshina',
+    program: 'COVID Rapid Response Grant',
+    category: 'grant',
+    date: '2020-04-15',
+    amount: '₦50,000',
+    status: 'completed',
+    town: 'Akoko SE',
+    phoneNumber: '070****0332',
+    description: 'COVID-19 emergency support grant'
   }
 ];
 
 export const beneficiaryCategories = [
-  { id: 'npower', label: 'NPOWER Beneficiaries', count: beneficiaries.filter(b => b.category === 'npower').length },
-  { id: 'credit_facility', label: 'Credit Facility Beneficiaries', count: beneficiaries.filter(b => b.category === 'credit_facility').length },
-  { id: 'partnership', label: 'Partnership Program Beneficiaries', count: beneficiaries.filter(b => b.category === 'partnership').length },
-  { id: 'scholarship', label: 'Scholarship Beneficiaries', count: beneficiaries.filter(b => b.category === 'scholarship').length },
-  { id: 'bursary', label: 'Bursary Beneficiaries', count: beneficiaries.filter(b => b.category === 'bursary').length },
-  { id: 'grant', label: 'Grant Beneficiaries', count: beneficiaries.filter(b => b.category === 'grant').length },
-  { id: 'award', label: 'Award Beneficiaries', count: beneficiaries.filter(b => b.category === 'award').length },
-  { id: 'employment', label: 'Employment Beneficiaries', count: beneficiaries.filter(b => b.category === 'employment').length }
+  { id: 'award', label: 'Lawyers Robe Award', count: 62 },
+  { id: 'grant', label: 'COVID Rapid Response Grant', count: 150 },
+  { id: 'npower', label: 'NPOWER Beneficiaries', count: 0 },
+  { id: 'credit_facility', label: 'Credit Facility Beneficiaries', count: 0 },
+  { id: 'partnership', label: 'Partnership Program Beneficiaries', count: 0 },
+  { id: 'scholarship', label: 'Scholarship Beneficiaries', count: 0 },
+  { id: 'bursary', label: 'Bursary Beneficiaries', count: 0 },
+  { id: 'employment', label: 'Employment Beneficiaries', count: 0 }
 ];
 
-// Statistics for dashboard
+// Statistics for dashboard - Real numbers from constituency service records
 export const beneficiaryStats = {
-  totalBeneficiaries: beneficiaries.length,
-  npowerBeneficiaries: beneficiaries.filter(b => b.category === 'npower').length,
-  creditFacilityBeneficiaries: beneficiaries.filter(b => b.category === 'credit_facility').length,
-  partnershipBeneficiaries: beneficiaries.filter(b => b.category === 'partnership').length,
-  scholarshipBeneficiaries: beneficiaries.filter(b => b.category === 'scholarship').length,
-  bursaryBeneficiaries: beneficiaries.filter(b => b.category === 'bursary').length,
-  grantBeneficiaries: beneficiaries.filter(b => b.category === 'grant').length,
-  awardBeneficiaries: beneficiaries.filter(b => b.category === 'award').length,
-  employmentBeneficiaries: beneficiaries.filter(b => b.category === 'employment').length,
-  completedPrograms: beneficiaries.filter(b => b.status === 'completed').length,
-  ongoingPrograms: beneficiaries.filter(b => b.status === 'ongoing').length,
-  totalAmount: beneficiaries.reduce((sum, b) => {
-    const amount = b.amount ? parseInt(b.amount.replace(/[₦,]/g, '')) : 0;
-    return sum + amount;
-  }, 0)
+  totalBeneficiaries: 212, // 62 Lawyers Robe + 150 COVID Grant
+  npowerBeneficiaries: 0,
+  creditFacilityBeneficiaries: 0,
+  partnershipBeneficiaries: 0,
+  scholarshipBeneficiaries: 0,
+  bursaryBeneficiaries: 0,
+  grantBeneficiaries: 150, // COVID Rapid Response Grant
+  awardBeneficiaries: 62, // Lawyers Robe Award
+  employmentBeneficiaries: 0,
+  completedPrograms: 212,
+  ongoingPrograms: 0,
+  totalAmount: 150 * 50000 // ₦7,500,000 for COVID grants
 };
 
 export const constituencyServiceStats = {
   totalAides: 68,
   totalEmployed: 37,
   totalPrograms: 10,
-  totalBeneficiaries: beneficiaries.length,
+  totalBeneficiaries: 212, // Real number from constituency service records
   categories: {
     leadership: 7,
     specialAdvisers: 5,

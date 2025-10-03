@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { MapPin, Calendar, DollarSign, Users, CheckCircle, Clock, AlertCircle, Building, Wrench } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { ReusableTable, type TableColumn, type StatCard } from '@/components/common/table-comp/ReusableTable';
 import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
+import { ReusableTable, type StatCard, type TableColumn } from '@/components/common/table-comp/ReusableTable';
+import { Badge } from '@/components/ui/badge';
 import { infrastructureProjects } from '@/data/infrastructureProjects';
+import { AlertCircle, Building, Calendar, CheckCircle, Clock, MapPin, Wrench } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 export function InfrastructureProjectsTable() {
   const [selectedProject, setSelectedProject] = useState<any>(null);

@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Calendar, FileText, Users, CheckCircle, Clock, AlertCircle, BookOpen, Gavel, MessageSquare, FileSearch, Send, CheckSquare } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { ReusableTable, type TableColumn, type StatCard } from '@/components/common/table-comp/ReusableTable';
 import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
+import { ReusableTable, type StatCard, type TableColumn } from '@/components/common/table-comp/ReusableTable';
+import { Badge } from '@/components/ui/badge';
 import { legislativeRecords } from '@/data/legislativeRecords';
+import { AlertCircle, BookOpen, Calendar, CheckCircle, CheckSquare, Clock, FileSearch, FileText, Gavel, MessageSquare, Users } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 export function LegislativeRecordsTable() {
   const [selectedRecord, setSelectedRecord] = useState<any>(null);

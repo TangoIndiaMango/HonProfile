@@ -1,12 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { TableHero } from './TableHero';
-import { TableStats } from './TableStats';
-import { TableFilters, type FilterOption } from './TableFilters';
-import { TableContent } from './TableContent';
-import { TablePagination } from './TablePagination';
+import { useMemo, useState } from 'react';
 import { BasicHero } from '../BasicHero';
+import { TableContent } from './TableContent';
+import { TableFilters, type FilterOption } from './TableFilters';
+import { TablePagination } from './TablePagination';
+import { TableStats } from './TableStats';
 
 export interface TableColumn {
   key: string;

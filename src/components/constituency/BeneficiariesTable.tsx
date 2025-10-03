@@ -1,25 +1,25 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import {
-  Phone,
-  MapPin,
-  Users,
-  Filter,
-  Calendar,
-  Award,
-  DollarSign,
-  CheckCircle,
-  Clock,
-} from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
 import {
   ReusableTable,
-  type TableColumn,
   type StatCard,
+  type TableColumn,
 } from '@/components/common/table-comp/ReusableTable';
-import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
+import { Badge } from '@/components/ui/badge';
 import { beneficiaries, beneficiaryCategories } from '@/data/beneficiaries';
+import {
+  Award,
+  Calendar,
+  CheckCircle,
+  Clock,
+  DollarSign,
+  Filter,
+  MapPin,
+  Phone,
+  Users,
+} from 'lucide-react';
+import { useState } from 'react';
 
 export function BeneficiariesTable() {
   const [selectedBeneficiary, setSelectedBeneficiary] = useState<any>(null);

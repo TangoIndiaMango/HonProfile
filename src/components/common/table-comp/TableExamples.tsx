@@ -1,16 +1,16 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Users, Filter, MapPin, Phone } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { 
-  TableHero, 
-  TableStats, 
-  TableFilters, 
-  TableContent, 
+import { Filter, MapPin, Users } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import {
+  TableContent,
+  TableFilters,
+  TableHero,
   TablePagination,
-  type TableColumn,
-  type StatCard 
+  TableStats,
+  type StatCard,
+  type TableColumn
 } from './index';
 
 // Example: Custom table using individual components

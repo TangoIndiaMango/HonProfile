@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import { Award, Users, Filter, Calendar, MapPin, Building, DollarSign } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { ReusableTable, type TableColumn, type StatCard } from '@/components/common/table-comp/ReusableTable';
 import { DetailsModal } from '@/components/common/table-comp/DetailsModal';
+import { ReusableTable, type StatCard, type TableColumn } from '@/components/common/table-comp/ReusableTable';
+import { Badge } from '@/components/ui/badge';
 import { empowermentPrograms } from '@/data/empowermentPrograms';
+import { Award, Building, Calendar, Users } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 export function EmpowermentProgramsTable() {
   const [selectedProgram, setSelectedProgram] = useState<any>(null);

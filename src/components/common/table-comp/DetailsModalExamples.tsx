@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import { Phone, MapPin, Mail, Calendar, User, Shield, Award, Building, DollarSign } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { Award, Building, Calendar, DollarSign, MapPin, Phone, Shield, User } from 'lucide-react';
+import { useState } from 'react';
 import { DetailsModal } from './DetailsModal';
 
 // Example 1: Aide Details Modal
