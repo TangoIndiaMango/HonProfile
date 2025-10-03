@@ -42,7 +42,7 @@ export function About() {
             <div className="relative w-full max-w-md mx-auto lg:mx-0 h-full">
               <div className="h-full relative overflow-hidden">
                 <Image
-                  src="/recieved/adeogun-look.png"
+                  src="/recieved/adeogun-white-glass.png"
                   alt="Hon. Ade Adeogun"
                   fill
                   className="object-cover"
@@ -69,7 +69,7 @@ export function About() {
             <motion.div className="relative md:hidden w-full max-w-md mx-auto lg:mx-0" variants={fadeUp}>
               <div className="h-[400px]  relative overflow-hidden">
                 <Image
-                  src="/recieved/adeogun-look.png"
+                  src="/recieved/adeogun-white-glass.png"
                   alt="Hon. Ade Adeogun"
                   fill
                   className="object-cover"
