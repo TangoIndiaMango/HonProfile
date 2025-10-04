@@ -8,19 +8,22 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 const featuredVideos = [
   {
     id: 1,
-    title: 'Hon. Ade Adeogun - Legislative Activities',
-    description: 'Parliamentary activities and legislative interventions for the constituency. Seized Diezani Jewellery Valued At N14 4 billion - EFCC Reveals',
-    videoUrl: 'https://www.youtube.com/embed/ZRIjo4QZkbw?autoplay=1&mute=0&start=41&loop=1&playlist=ZRIjo4QZkbw',
+    title: 'Hon. Ade Adeogun - Community on Recovery Chairman',
+    description:
+      'Parliamentary activities and legislative interventions for the constituency . Seized Diezani Jewellery Valued At N14 4 billion - EFCC Reveals',
+    videoUrl:
+      'https://www.youtube.com/embed/ZRIjo4QZkbw?autoplay=1&mute=0&start=41&loop=1&playlist=ZRIjo4QZkbw',
     category: 'Legislative',
-    thumbnail: '/recieved/adeogun-office.png'
+    thumbnail: '/recieved/adeogun-office.png',
   },
   {
     id: 2,
     title: 'Speak with Hon. Ade Adeogun',
     description: 'Speaking with Hon. Ade Adeogun',
-    videoUrl: 'https://www.youtube-nocookie.com/embed/gxukvGFS_zc?autoplay=0&mute=0&start=120',
+    videoUrl:
+      'https://www.youtube-nocookie.com/embed/gxukvGFS_zc?autoplay=0&mute=0&start=120',
     category: 'Leadership',
-    thumbnail: '/recieved/adeogun-suit.png'
+    thumbnail: '/recieved/adeogun-suit.png',
   },
   // {
   //   id: 3,
@@ -44,13 +47,13 @@ export function VideoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextVideo = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex(prevIndex =>
       prevIndex === featuredVideos.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevVideo = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex(prevIndex =>
       prevIndex === 0 ? featuredVideos.length - 1 : prevIndex - 1
     );
   };
@@ -60,7 +63,7 @@ export function VideoCarousel() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -68,13 +71,14 @@ export function VideoCarousel() {
           >
             Leadership in Action
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-gray-600 max-w-3xl mx-auto"
           >
-            Watch Hon. Ade Adeogun&apos;s commitment to accountable leadership and community development
+            Watch Hon. Ade Adeogun&apos;s commitment to accountable leadership
+            and community development
           </motion.p>
         </div>
 
@@ -115,8 +119,8 @@ export function VideoCarousel() {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentIndex 
-                      ? 'bg-black w-8' 
+                    index === currentIndex
+                      ? 'bg-black w-8'
                       : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
@@ -136,7 +140,7 @@ export function VideoCarousel() {
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               {featuredVideos[currentIndex].title}
             </h3>
-            <p className="text-gray-600 max-w-3xl mx-auto">
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
               {featuredVideos[currentIndex].description}
             </p>
             <div className="mt-4">
@@ -149,7 +153,9 @@ export function VideoCarousel() {
 
         {/* Video Thumbnail Slider */}
         <div className="mt-12">
-          <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">More Videos</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+            More Videos
+          </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {featuredVideos.map((video, index) => (
               <motion.button
@@ -158,8 +164,8 @@ export function VideoCarousel() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`relative aspect-video rounded-lg overflow-hidden transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'ring-4 ring-blue-600 shadow-lg' 
+                  index === currentIndex
+                    ? 'ring-4 ring-blue-600 shadow-lg'
                     : 'hover:shadow-md'
                 }`}
               >
@@ -176,9 +182,7 @@ export function VideoCarousel() {
                   <p className="text-white text-xs font-medium truncate">
                     {video.title}
                   </p>
-                  <p className="text-gray-200 text-xs">
-                    {video.category}
-                  </p>
+                  <p className="text-gray-200 text-xs">{video.category}</p>
                 </div>
               </motion.button>
             ))}
