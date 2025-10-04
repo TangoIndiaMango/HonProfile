@@ -9,7 +9,7 @@ const featuredVideos = [
   {
     id: 1,
     title: 'Hon. Ade Adeogun - Legislative Activities',
-    description: 'Parliamentary activities and legislative interventions for the constituency.',
+    description: 'Parliamentary activities and legislative interventions for the constituency. Seized Diezani Jewellery Valued At N14 4 billion - EFCC Reveals',
     videoUrl: 'https://www.youtube.com/embed/ZRIjo4QZkbw?autoplay=1&mute=0&start=41&loop=1&playlist=ZRIjo4QZkbw',
     category: 'Legislative',
     thumbnail: '/recieved/adeogun-office.png'
