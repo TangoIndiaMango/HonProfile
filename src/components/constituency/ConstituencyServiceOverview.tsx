@@ -209,7 +209,7 @@ export function ConstituencyServiceOverview() {
                   label: 'Women Grants',
                   color: 'text-pink-600',
                 },
-                { value: '100+', label: 'Employment', color: 'text-red-600' },
+                { value: '300+', label: 'Employment', color: 'text-red-600' },
               ]}
               viewAllLink="/constituency-service/beneficiaries"
               viewAllText="View All Beneficiaries"

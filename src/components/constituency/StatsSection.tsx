@@ -46,7 +46,7 @@ const statsCards = [
   },
   {
     title: 'Total Beneficiaries',
-    value: '500+',
+    value: '22,500+',
     description: 'People directly impacted by programs',
     icon: Award,
     color: 'text-indigo-600',
