@@ -5,22 +5,28 @@ import {
   Wrench,
   Users,
   Tractor,
+  Handshake,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 
 const impactData = [
+   {
+    icon: Users,
+    title:'Pensionable Employments for 126 Young Men and Women',
+    description: 'Facilitation of penshionable employments for 126 young men and women in federal government agencies including NPA, NIA, DSS, NRC, FMCs, NDLEA, NSCDC, FRSC, POLAC, Nigerian Navy, Nigeria Police Force, Nigeria Customs Service, Nigeria Immigration Service, Nigerian Army, Federal Fire Service, Federal School of Med. Lab. Tech, Jos including Ondo State Teaching Service as well as Ondo State Primary Health Care Development Agency.'
+  },
   {
     icon: GraduationCap,
-    title: 'Scholarships for 500 Students',
+    title: 'Scholarships for over 800 Students',
     description:
-      'Supported indigent youths at Upland College of Education, Ipesi Akoko with full and partial scholarships to boost access to quality education.',
+      'Supported over 800 indigent young people with 3-year scholarship at Upland College of Education, leading to the award of National Certificate in Education (NCE) at the end of their programmes.',
   },
   {
     icon: DollarSign,
-    title: 'COVID-19 Loans for Farmers & Small Businesses',
+    title: 'International Training for Sea Farers',
     description:
-      'Distributed ₦100,000–₦500,000 loans to about 200 farmers and small-scale entrepreneurs to keep local livelihoods alive during the pandemic.',
+      'Facilitation of international training for sea farers for young people of Akoko origin in Greece and India — sponsored by NIMASA.',
   },
   {
     icon: Wrench,
@@ -39,6 +45,13 @@ const impactData = [
     title: 'Motorcycles & Buses for Communities',
     description:
       'Donated 26 motorcycles (one per ward) and 7 buses to co-operative groups, improving mobility and income-generating opportunities.',
+  },
+ 
+  {
+    icon: Handshake,
+    title: 'Community Conflict Resolution',
+    description:
+      'Successfully mediated and resolved volatile land dispute between Supare and Oka farming communities, preventing potential violence and ensuring agricultural productivity continues uninterrupted.',
   },
 ];
 
@@ -92,9 +105,9 @@ export function Impact() {
           </motion.div>
         </motion.div>
 
-        {/* Second Row - 3 cards */}
+        {/* Second Row - 4 cards */}
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -108,6 +121,9 @@ export function Impact() {
           </motion.div>
           <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
             <ImpactCard {...impactData[4]} popIcon={popIcon} />
+          </motion.div>
+          <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
+            <ImpactCard {...impactData[5]} popIcon={popIcon} />
           </motion.div>
         </motion.div>
       </div>

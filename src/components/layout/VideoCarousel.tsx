@@ -8,9 +8,9 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 const featuredVideos = [
   {
     id: 1,
-    title: 'Hon. Ade Adeogun - Community on Recovery Chairman',
+    title: 'Hon. Ade Adeogun - Committe Chairman on Asset Recovery',
     description:
-      'Parliamentary activities and legislative interventions for the constituency . Seized Diezani Jewellery Valued At N14 4 billion - EFCC Reveals',
+      'Parliamentary Activities and Legislative intervention on the Recovery of Assets. EFCC at the Sitting.',
     videoUrl:
       'https://www.youtube.com/embed/ZRIjo4QZkbw?autoplay=1&mute=0&start=41&loop=1&playlist=ZRIjo4QZkbw',
     category: 'Legislative',
@@ -21,7 +21,7 @@ const featuredVideos = [
     title: 'Speak with Hon. Ade Adeogun',
     description: 'Speaking with Hon. Ade Adeogun',
     videoUrl:
-      'https://www.youtube-nocookie.com/embed/gxukvGFS_zc?autoplay=0&mute=0&start=120',
+      'https://www.youtube-nocookie.com/embed/gxukvGFS_zc?autoplay=0&mute=0&start=140',
     category: 'Leadership',
     thumbnail: '/recieved/adeogun-suit.png',
   },
@@ -37,7 +37,7 @@ const featuredVideos = [
   //   id: 4,
   //   title: 'Legislative Activities',
   //   description: 'Parliamentary activities and legislative interventions for the constituency.',
-  //   videoUrl: 'https://www.youtube.com/embed/ZRIjo4QZkbw?autoplay=0&mute=0&start=60',
+  //   videoUrl: 'https://drive.google.com/file/d/1NCTbZ5OOHwjwQa4qPrErr3a5fUoEjPyM/view?usp=sharing',
   //   category: 'Legislative',
   //   thumbnail: '/recieved/adeogun-read.png'
   // }
@@ -59,15 +59,15 @@ export function VideoCarousel() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-10 bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="text-2xl md:text-3xl font-bold text-gray-900 mb-3"
           >
             Leadership in Action
           </motion.h2>
@@ -75,7 +75,7 @@ export function VideoCarousel() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-gray-600 max-w-3xl mx-auto"
+            className="text-base text-gray-600 max-w-2xl mx-auto"
           >
             Watch Hon. Ade Adeogun&apos;s commitment to accountable leadership
             and community development
@@ -84,7 +84,7 @@ export function VideoCarousel() {
 
         {/* YouTube Video Player */}
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl shadow-2xl">
+          <div className="overflow-hidden rounded-xl shadow-xl">
             <motion.div
               key={currentIndex}
               initial={{ opacity: 0, x: 300 }}
@@ -104,12 +104,12 @@ export function VideoCarousel() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center justify-between mt-6">
+          <div className="flex items-center justify-between mt-4">
             <button
               onClick={prevVideo}
-              className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full p-3 hover:bg-gray-50"
+              className="bg-white shadow-md hover:shadow-lg transition-all duration-300 rounded-full p-2.5 hover:bg-gray-50"
             >
-              <ChevronLeft className="w-6 h-6 text-gray-700" />
+              <ChevronLeft className="w-5 h-5 text-gray-700" />
             </button>
 
             {/* Video Indicators */}
@@ -118,9 +118,9 @@ export function VideoCarousel() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
-                      ? 'bg-black w-8'
+                      ? 'bg-black w-5'
                       : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
@@ -129,22 +129,22 @@ export function VideoCarousel() {
 
             <button
               onClick={nextVideo}
-              className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full p-3 hover:bg-gray-50"
+              className="bg-white shadow-md hover:shadow-lg transition-all duration-300 rounded-full p-2.5 hover:bg-gray-50"
             >
-              <ChevronRight className="w-6 h-6 text-gray-700" />
+              <ChevronRight className="w-5 h-5 text-gray-700" />
             </button>
           </div>
 
           {/* Video Info */}
-          <div className="mt-6 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          <div className="mt-4 text-center">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1.5">
               {featuredVideos[currentIndex].title}
             </h3>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto text-base">
               {featuredVideos[currentIndex].description}
             </p>
             <div className="mt-4">
-              <span className="bg-black px-4 py-2 rounded-full text-white text-sm font-medium">
+              <span className="bg-black px-3.5 py-1.5 rounded-full text-white text-xs md:text-sm font-medium">
                 {featuredVideos[currentIndex].category}
               </span>
             </div>
@@ -152,21 +152,21 @@ export function VideoCarousel() {
         </div>
 
         {/* Video Thumbnail Slider */}
-        <div className="mt-12">
-          <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center">
             More Videos
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {featuredVideos.map((video, index) => (
               <motion.button
                 key={video.id}
                 onClick={() => setCurrentIndex(index)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`relative aspect-video rounded-lg overflow-hidden transition-all duration-300 ${
+                className={`relative aspect-video rounded-md overflow-hidden transition-all duration-300 ${
                   index === currentIndex
-                    ? 'ring-4 ring-blue-600 shadow-lg'
-                    : 'hover:shadow-md'
+                    ? 'ring-2 ring-blue-600 shadow-sm'
+                    : 'hover:shadow'
                 }`}
               >
                 <Image
@@ -176,13 +176,13 @@ export function VideoCarousel() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                  <Play className="w-8 h-8 text-white" />
+                  <Play className="w-6 h-6 text-white" />
                 </div>
                 <div className="absolute bottom-2 left-2 right-2">
-                  <p className="text-white text-xs font-medium truncate">
+                  <p className="text-white text-[11px] font-medium truncate">
                     {video.title}
                   </p>
-                  <p className="text-gray-200 text-xs">{video.category}</p>
+                  <p className="text-gray-200 text-[11px]">{video.category}</p>
                 </div>
               </motion.button>
             ))}

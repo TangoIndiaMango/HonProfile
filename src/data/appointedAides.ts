@@ -560,6 +560,14 @@ export const appointedAides: AppointedAide[] = [
     town: 'Akungba',
     phoneNumber: '070****3965',
     category: 'office_staff'
+  },
+  {
+    id: 69,
+    name: 'Aliyu Haruna',
+    post: 'Liaison Officer',
+    town: 'Oba Akoko',
+    phoneNumber: '080****2340',
+    category: 'office_staff'
   }
 ];
 
@@ -569,5 +577,5 @@ export const aideCategories = [
   { id: 'legislative_aide', label: 'Legislative Aides', count: 1 },
   { id: 'special_assistant', label: 'Special Assistants', count: 17 },
   { id: 'personal_assistant', label: 'Personal Assistants', count: 18 },
-  { id: 'office_staff', label: 'Office Staff', count: 20 }
+  { id: 'office_staff', label: 'Office Staff', count: 21 }
 ];

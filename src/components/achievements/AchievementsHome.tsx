@@ -29,12 +29,20 @@ export function AchievementsHome() {
   // Featured video testimonials
   const featuredTestimonials = [
     {
+      id: 8,
+      type: 'video',
+      thumbnail: '/recieved/adeogun-rally.png',
+      videoUrl:
+        'https://drive.google.com/file/d/1NCTbZ5OOHwjwQa4qPrErr3a5fUoEjPyM/view?usp=sharing',
+      title: 'Chief Solagbade, APC LEADER',
+    },
+    {
       id: 1,
       title: 'Infrastructure Impact',
       speaker: 'Arc Kayode - Infrastructure Expert',
       videoUrl:
         'https://drive.google.com/file/d/1N6w1nm9fZ6EV3wyPU_Fc5opCrjISec58/view?usp=sharing',
-      thumbnail: '/images/1ac896e9b089113c026df2c1d596c42534705866.png',
+      thumbnail: '/works/adeogun-engineer.jpg',
     },
     {
       id: 2,
@@ -42,7 +50,7 @@ export function AchievementsHome() {
       speaker: 'Principal Ajagbokun High School',
       videoUrl:
         'https://drive.google.com/file/d/1IwvmC-iuwp0cE6h08-1WtH35MtWn-pG0/view?usp=sharing',
-      thumbnail: '/images/b7d05d4a656e09768b58159a42e7cda1851f0c3a.png',
+      thumbnail: '/works/principal_oba.jpg',
     },
     {
       id: 3,
@@ -50,7 +58,7 @@ export function AchievementsHome() {
       speaker: 'Chief Mrs Ajayi Eunice - NGO Representative',
       videoUrl:
         'https://drive.google.com/file/d/15j7V2q8foVhAc5KMnIEElRQuxNvcNDqO/view?usp=sharing',
-      thumbnail: '/images/1f1dc702038b1944d5f8162f874bee68929e222a.png',
+      thumbnail: '/works/chief_mrs_to_adeogun.jpg',
     },
   ];
 
@@ -125,7 +133,7 @@ export function AchievementsHome() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8">
             {featuredTestimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.id}

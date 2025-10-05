@@ -18,7 +18,7 @@ const previewStats = [
   },
   {
     icon: Briefcase,
-    number: '37',
+    number: '576+',
     label: 'Employment Created',
     description: 'Youths employed in government agencies',
     color: 'text-green-600',
@@ -26,7 +26,7 @@ const previewStats = [
   },
   {
     icon: GraduationCap,
-    number: '10',
+    number: '104+',
     label: 'Empowerment Programs',
     description: 'Skills development initiatives',
     color: 'text-purple-600',
@@ -34,7 +34,7 @@ const previewStats = [
   },
   {
     icon: Award,
-    number: '500+',
+    number: '22,500+',
     label: 'Total Beneficiaries',
     description: 'Direct program beneficiaries',
     color: 'text-orange-600',
