@@ -11,10 +11,10 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 
 const impactData = [
-   {
+  {
     icon: Users,
-    title:'Pensionable Employments for 126 Young Men and Women',
-    description: 'Facilitation of penshionable employments for 126 young men and women in federal government agencies including NPA, NIA, DSS, NRC, FMCs, NDLEA, NSCDC, FRSC, POLAC, Nigerian Navy, Nigeria Police Force, Nigeria Customs Service, Nigeria Immigration Service, Nigerian Army, Federal Fire Service, Federal School of Med. Lab. Tech, Jos including Ondo State Teaching Service as well as Ondo State Primary Health Care Development Agency.'
+    title:'Pensionable Appointments for over 126 Constituents',
+    description: 'Facilitated over 126 constituents into pensionable appointments across key federal agencies (NPA, NIA, DSS, NRC, FMCs, NDLEA, NSCDC, FRSC, POLAC, Navy, Police, Customs, Immigration, Army, Fire Service) and Ondo State services.'
   },
   {
     icon: GraduationCap,
