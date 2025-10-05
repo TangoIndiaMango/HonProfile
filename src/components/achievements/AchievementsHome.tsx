@@ -103,7 +103,7 @@ export function AchievementsHome() {
         >
           {stats.map((stat, index) => (
             <div key={stat.label + index} className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 min-h-[200px]">
                 <stat.icon className="w-8 h-8 text-white mx-auto mb-4" />
                 <div className="text-3xl lg:text-4xl font-bold text-white mb-2">
                   {stat.number}
