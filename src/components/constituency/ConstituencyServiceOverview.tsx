@@ -105,17 +105,17 @@ export function ConstituencyServiceOverview() {
               title="Leadership Team Structure"
               stats={[
                 {
-                  value: '7',
+                  value: '128+',
                   label: 'Leadership Team',
                   color: 'text-blue-600',
                 },
                 {
-                  value: '17',
+                  value: '12+',
                   label: 'Special Assistants',
                   color: 'text-green-600',
                 },
                 {
-                  value: '18',
+                  value: '23+',
                   label: 'Personal Assistants',
                   color: 'text-purple-600',
                 },
@@ -130,17 +130,17 @@ export function ConstituencyServiceOverview() {
               title="Job Creation Impact"
               stats={[
                 {
-                  value: '12',
+                  value: '112+',
                   label: 'Security Agencies',
                   color: 'text-blue-600',
                 },
                 {
-                  value: '8',
+                  value: '80+',
                   label: 'Federal Agencies',
                   color: 'text-green-600',
                 },
                 {
-                  value: '17',
+                  value: '170+',
                   label: 'Other Agencies',
                   color: 'text-purple-600',
                 },
@@ -155,17 +155,17 @@ export function ConstituencyServiceOverview() {
               title="Development Programs"
               stats={[
                 {
-                  value: '3',
+                  value: '104+',
                   label: 'Partnership Programs',
                   color: 'text-blue-600',
                 },
                 {
-                  value: '3',
+                  value: '136+',
                   label: 'Education Programs',
                   color: 'text-green-600',
                 },
                 {
-                  value: '4',
+                  value: '106+',
                   label: 'Empowerment Programs',
                   color: 'text-purple-600',
                 },
@@ -180,32 +180,36 @@ export function ConstituencyServiceOverview() {
               title="Program Beneficiaries"
               stats={[
                 {
-                  value: '3',
+                  value: '500+',
                   label: 'NPOWER Beneficiaries',
                   color: 'text-blue-600',
                 },
                 {
-                  value: '2',
+                  value: '200+',
                   label: 'Credit Facility',
                   color: 'text-green-600',
                 },
                 {
-                  value: '3',
+                  value: '100+',
                   label: 'Partnership Programs',
                   color: 'text-purple-600',
                 },
                 {
-                  value: '3',
+                  value: '100+',
                   label: 'Education Support',
                   color: 'text-yellow-600',
                 },
                 {
-                  value: '2',
+                  value: '100+',
                   label: 'Professional Awards',
                   color: 'text-indigo-600',
                 },
-                { value: '2', label: 'Women Grants', color: 'text-pink-600' },
-                { value: '3', label: 'Employment', color: 'text-red-600' },
+                {
+                  value: '100+',
+                  label: 'Women Grants',
+                  color: 'text-pink-600',
+                },
+                { value: '100+', label: 'Employment', color: 'text-red-600' },
               ]}
               viewAllLink="/constituency-service/beneficiaries"
               viewAllText="View All Beneficiaries"
@@ -216,26 +220,38 @@ export function ConstituencyServiceOverview() {
             <TabPreview
               title="Infrastructure Development"
               stats={[
-                { value: '3', label: 'Road Projects', color: 'text-blue-600' },
-                { value: '3', label: 'Water Projects', color: 'text-cyan-600' },
                 {
-                  value: '3',
+                  value: '316+',
+                  label: 'Road Projects',
+                  color: 'text-blue-600',
+                },
+                {
+                  value: '100+',
+                  label: 'Water Projects',
+                  color: 'text-cyan-600',
+                },
+                {
+                  value: '136+',
                   label: 'School Projects',
                   color: 'text-green-600',
                 },
-                { value: '2', label: 'Health Projects', color: 'text-red-600' },
                 {
-                  value: '2',
+                  value: '100+',
+                  label: 'Health Projects',
+                  color: 'text-red-600',
+                },
+                {
+                  value: '100+',
                   label: 'Market Projects',
                   color: 'text-yellow-600',
                 },
                 {
-                  value: '1',
+                  value: '100+',
                   label: 'Bridge Projects',
                   color: 'text-purple-600',
                 },
                 {
-                  value: '2',
+                  value: '100+',
                   label: 'Electricity Projects',
                   color: 'text-orange-600',
                 },
@@ -250,28 +266,32 @@ export function ConstituencyServiceOverview() {
               title="Legislative Achievements"
               stats={[
                 {
-                  value: '4',
+                  value: '106+',
                   label: 'Bills Sponsored',
                   color: 'text-green-600',
                 },
-                { value: '3', label: 'Motions Moved', color: 'text-blue-600' },
                 {
-                  value: '3',
+                  value: '100+',
+                  label: 'Motions Moved',
+                  color: 'text-blue-600',
+                },
+                {
+                  value: '100+',
                   label: 'Committee Activities',
                   color: 'text-purple-600',
                 },
                 {
-                  value: '2',
+                  value: '100+',
                   label: 'Questions Asked',
                   color: 'text-yellow-600',
                 },
                 {
-                  value: '2',
+                  value: '100+',
                   label: 'Petitions Handled',
                   color: 'text-orange-600',
                 },
                 {
-                  value: '2',
+                  value: '100+',
                   label: 'Resolutions Passed',
                   color: 'text-red-600',
                 },

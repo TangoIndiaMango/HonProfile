@@ -24,17 +24,17 @@ export function QuickAccessCards() {
             </div>
             <div className="flex justify-between">
               <span className="text-sm text-gray-600">Special Advisers</span>
-              <Badge className="bg-green-100 text-green-800">6</Badge>
+              <Badge className="bg-green-100 text-green-800">12+</Badge>
             </div>
             <div className="flex justify-between">
               <span className="text-sm text-gray-600">Legislative Aides</span>
-              <Badge className="bg-purple-100 text-purple-800">1</Badge>
+              <Badge className="bg-purple-100 text-purple-800">23+</Badge>
             </div>
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200">
             <Link href="/constituency-service/aides">
               <Button variant="outline" className="w-full">
-                View All 68 Aides
+                View All Aides
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
@@ -53,21 +53,21 @@ export function QuickAccessCards() {
           <div className="space-y-2">
             <div className="flex justify-between">
               <span className="text-sm text-gray-600">Security Agencies</span>
-              <Badge className="bg-blue-100 text-blue-800">12</Badge>
+              <Badge className="bg-blue-100 text-blue-800">112+</Badge>
             </div>
             <div className="flex justify-between">
               <span className="text-sm text-gray-600">Federal Agencies</span>
-              <Badge className="bg-green-100 text-green-800">8</Badge>
+              <Badge className="bg-green-100 text-green-800">80+</Badge>
             </div>
             <div className="flex justify-between">
               <span className="text-sm text-gray-600">Other Agencies</span>
-              <Badge className="bg-purple-100 text-purple-800">17</Badge>
+              <Badge className="bg-purple-100 text-purple-800">170+</Badge>
             </div>
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200">
             <Link href="/constituency-service/employment">
               <Button variant="outline" className="w-full">
-                View All 37 Jobs
+                View All Jobs
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
@@ -85,16 +85,22 @@ export function QuickAccessCards() {
         <CardContent>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span className="text-sm text-gray-600">Infrastructure Projects</span>
-              <Badge className="bg-orange-100 text-orange-800">16</Badge>
+              <span className="text-sm text-gray-600">
+                Infrastructure Projects
+              </span>
+              <Badge className="bg-orange-100 text-orange-800">316+</Badge>
             </div>
             <div className="flex justify-between">
-              <span className="text-sm text-gray-600">Empowerment Programs</span>
-              <Badge className="bg-purple-100 text-purple-800">10</Badge>
+              <span className="text-sm text-gray-600">
+                Empowerment Programs
+              </span>
+              <Badge className="bg-purple-100 text-purple-800">104+</Badge>
             </div>
             <div className="flex justify-between">
-              <span className="text-sm text-gray-600">Legislative Activities</span>
-              <Badge className="bg-red-100 text-red-800">16</Badge>
+              <span className="text-sm text-gray-600">
+                Legislative Activities
+              </span>
+              <Badge className="bg-red-100 text-red-800">106+</Badge>
             </div>
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200">

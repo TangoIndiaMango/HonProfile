@@ -6,7 +6,7 @@ import { Users, Briefcase, GraduationCap, Award, Building, FileText } from 'luci
 const statsCards = [
   {
     title: 'Leadership Team',
-    value: '68',
+    value: '128+',
     description: 'Strategic appointments across constituency',
     icon: Users,
     color: 'text-blue-600',
@@ -14,7 +14,7 @@ const statsCards = [
   },
   {
     title: 'Job Opportunities',
-    value: '37',
+    value: '576+',
     description: 'Youths employed in government agencies',
     icon: Briefcase,
     color: 'text-green-600',
@@ -22,7 +22,7 @@ const statsCards = [
   },
   {
     title: 'Development Programs',
-    value: '10',
+    value: '104+',
     description: 'Skills acquisition and empowerment initiatives',
     icon: GraduationCap,
     color: 'text-purple-600',
@@ -30,7 +30,7 @@ const statsCards = [
   },
   {
     title: 'Infrastructure Projects',
-    value: '16',
+    value: '316+',
     description: 'Roads, schools, health centers, and utilities',
     icon: Building,
     color: 'text-orange-600',
@@ -38,7 +38,7 @@ const statsCards = [
   },
   {
     title: 'Legislative Activities',
-    value: '16',
+    value: '106+',
     description: 'Bills, motions, and committee work',
     icon: FileText,
     color: 'text-red-600',

@@ -43,24 +43,24 @@ const infrastructureProjects = [
     description: 'Construction with erosion control line drains',
     type: 'image',
   },
-  // {
-  //   id: 5,
-  //   title: 'Central Mosque Renovation',
-  //   location: 'Ose Oba',
-  //   date: 'October 2021',
-  //   image: '/recieved/adeogun-read.png',
-  //   description: 'Massive renovation of Central Mosque',
-  //   type: 'image',
-  // },
-  // {
-  //   id: 6,
-  //   title: 'Iwaro-Ayegunle Road',
-  //   location: '7KM connecting communities',
-  //   date: '2021-2022',
-  //   image: '/recieved/adeogun-with.png',
-  //   description: 'Construction of 7KM road connecting communities',
-  //   type: 'image',
-  // },
+  {
+    id: 5,
+    title: 'Central Mosque Renovation',
+    location: 'Ose Oba',
+    date: 'October 2021',
+    image: '/works/ose_osque.jpg',
+    description: 'Massive renovation of Central Mosque',
+    type: 'image',
+  },
+  {
+    id: 6,
+    title: 'Iwaro-Ayegunle Road',
+    location: '7KM connecting communities',
+    date: '2021-2022',
+    image: '/works/good-road-network.jpg',
+    description: 'Construction of 7KM road connecting communities',
+    type: 'image',
+  },
   {
     id: 7,
     title: 'Educational Infrastructure',
@@ -79,15 +79,15 @@ const infrastructureProjects = [
     description: 'Distribution of agricultural materials and equipment',
     type: 'image',
   },
-  {
-    id: 9,
-    title: 'Sports Development',
-    location: 'Youth Centers',
-    date: '2021-2022',
-    image: '/recieved/adeogun-sport.png',
-    description: 'Sports facilities and youth development programs',
-    type: 'image',
-  },
+  // {
+  //   id: 9,
+  //   title: 'Sports Development',
+  //   location: 'Youth Centers',
+  //   date: '2021-2022',
+  //   image: '/recieved/adeogun-sport.png',
+  //   description: 'Sports facilities and youth development programs',
+  //   type: 'image',
+  // },
   {
     id: 10,
     title: 'Scholarship Program',
@@ -238,7 +238,9 @@ export function InfrastructureShowcase() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200"
-            onClick={() => (window.location.href = '/achievements?show=infrastructure')}
+            onClick={() =>
+              (window.location.href = '/achievements?show=infrastructure')
+            }
           >
             View All Infrastructure Projects
           </motion.button>
