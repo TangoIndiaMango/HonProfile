@@ -99,28 +99,28 @@ export function LegislativeRecordsTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Records',
-      value: legislativeRecords.length,
+      value: `${legislativeRecords.length}+`,
       description: 'Legislative activities',
       icon: FileText,
       iconColor: 'text-blue-600'
     },
     {
       title: 'Bills Sponsored',
-      value: legislativeRecords.filter(r => r.type === 'Bill').length,
+      value: `${legislativeRecords.filter(r => r.type === 'Bill').length}+`,
       description: 'Bills introduced',
       icon: BookOpen,
       iconColor: 'text-green-600'
     },
     {
       title: 'Passed Legislation',
-      value: legislativeRecords.filter(r => r.status === 'Passed').length,
+      value: `${legislativeRecords.filter(r => r.status === 'Passed').length}+`,
       description: 'Successfully passed',
       icon: CheckCircle,
       iconColor: 'text-purple-600'
     },
     {
       title: 'Committee Activities',
-      value: legislativeRecords.filter(r => r.type === 'Committee').length,
+      value: `${legislativeRecords.filter(r => r.type === 'Committee').length}+`,
       description: 'Committee oversight',
       icon: Users,
       iconColor: 'text-orange-600'

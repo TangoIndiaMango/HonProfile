@@ -91,14 +91,14 @@ export function BeneficiariesTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Beneficiaries',
-      value: beneficiaries.length,
+      value: `${beneficiaries.length}+`,
       description: 'People served',
       icon: Users,
       iconColor: 'text-blue-600',
     },
     {
       title: 'Completed Programs',
-      value: beneficiaries.filter(b => b.status === 'completed').length,
+      value: `${beneficiaries.filter(b => b.status === 'completed').length}+`,
       description: 'Successfully completed',
       icon: CheckCircle,
       iconColor: 'text-green-600',

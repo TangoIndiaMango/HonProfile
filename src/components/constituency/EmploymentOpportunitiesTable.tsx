@@ -79,21 +79,21 @@ export function EmploymentOpportunitiesTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Employment',
-      value: employmentOpportunities.length,
+      value: `${employmentOpportunities.length}+`,
       description: 'Employment opportunities',
       icon: Briefcase,
       iconColor: 'text-blue-600'
     },
     {
       title: 'Security Agencies',
-      value: employmentOpportunities.filter(e => e.category === 'security' || e.category === 'army' || e.category === 'navy').length,
+      value: `${employmentOpportunities.filter(e => e.category === 'security' || e.category === 'army' || e.category === 'navy').length}+`,
       description: 'Security positions',
       icon: Filter,
       iconColor: 'text-red-600'
     },
     {
       title: 'Federal Agencies',
-      value: employmentOpportunities.filter(e => e.category === 'fire_service' || e.category === 'immigration' || e.category === 'other').length,
+      value: `${employmentOpportunities.filter(e => e.category === 'fire_service' || e.category === 'immigration' || e.category === 'other').length}+`,
       description: 'Federal positions',
       icon: MapPin,
       iconColor: 'text-green-600'

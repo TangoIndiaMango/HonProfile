@@ -63,6 +63,12 @@ export function QuickAccessCards() {
               <span className="text-sm text-gray-600">Other Agencies</span>
               <Badge className="bg-purple-100 text-purple-800">70+</Badge>
             </div>
+            <div className="flex justify-between">
+              <span className="text-sm text-gray-600">
+                Artisans and Self Employed
+              </span>
+              <Badge className="bg-purple-100 text-purple-800">1000+</Badge>
+            </div>
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200">
             <Link href="/constituency-service/employment">

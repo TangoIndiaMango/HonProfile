@@ -86,21 +86,21 @@ export function AppointedAidesTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Aides',
-      value: appointedAides.length,
+      value: `${appointedAides.length}+`,
       description: 'Appointed positions',
       icon: Users,
       iconColor: 'text-blue-600'
     },
     {
       title: 'Filtered Results',
-      value: appointedAides.length, // Will be updated dynamically
+      value: `${appointedAides.length}+`, // Will be updated dynamically
       description: 'Matching criteria',
       icon: Filter,
       iconColor: 'text-green-600'
     },
     {
       title: 'Towns Covered',
-      value: towns.length,
+      value: `${towns.length}+`,
       description: 'Different locations',
       icon: MapPin,
       iconColor: 'text-purple-600'

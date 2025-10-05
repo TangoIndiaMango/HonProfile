@@ -69,21 +69,21 @@ export function EmpowermentProgramsTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Programs',
-      value: empowermentPrograms.length,
+      value: `${empowermentPrograms.length}+`,
       description: 'Empowerment programs',
       icon: Award,
       iconColor: 'text-blue-600'
     },
     {
       title: 'Total Beneficiaries',
-      value: empowermentPrograms.reduce((sum, prog) => sum + (prog?.beneficiaryCount || 0), 0),
+      value: `${empowermentPrograms.reduce((sum, prog) => sum + (prog?.beneficiaryCount || 0), 0)}+`,
       description: 'People empowered',
       icon: Users,
       iconColor: 'text-green-600'
     },
     {
       title: 'Partnerships',
-      value: [...new Set(empowermentPrograms.map(p => p.partner))].length,
+      value: `${[...new Set(empowermentPrograms.map(p => p.partner))].length}+`,
       description: 'Partner organizations',
       icon: Building,
       iconColor: 'text-purple-600'

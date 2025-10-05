@@ -97,14 +97,14 @@ export function InfrastructureProjectsTable() {
   const stats: StatCard[] = [
     {
       title: 'Total Projects',
-      value: infrastructureProjects.length,
+      value: `${infrastructureProjects.length}+`,
       description: 'Infrastructure projects',
       icon: Building,
       iconColor: 'text-blue-600'
     },
     {
       title: 'Completed Projects',
-      value: infrastructureProjects.filter(p => p.status === 'Completed').length,
+      value: `${infrastructureProjects.filter(p => p.status === 'Completed').length}+`,
       description: 'Successfully completed',
       icon: CheckCircle,
       iconColor: 'text-green-600'
