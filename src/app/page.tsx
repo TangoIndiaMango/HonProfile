@@ -9,6 +9,7 @@ import { InfrastructureShowcase } from '@/components/layout/InfrastructureShowca
 import { Insights } from '@/components/layout/Insights';
 import { LatestMedia } from '@/components/layout/LatestMedia';
 import { LegislativeInterventions } from '@/components/layout/LegislativeInterventions';
+import { NationalVoice } from '@/components/layout/NationalVoice';
 import { Quote } from '@/components/layout/Quote';
 import { Vision } from '@/components/layout/Vision';
 
@@ -24,6 +25,7 @@ export default function Home() {
       <InfrastructureShowcase />
       <ConstituencyServicePreview />
       <LegislativeInterventions />
+      {/* <NationalVoice /> */}
       <AchievementsHome />
       <LatestMedia />
       <Quote />

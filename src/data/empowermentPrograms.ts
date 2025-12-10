@@ -84,7 +84,7 @@ export const empowermentPrograms: EmpowermentProgram[] = [
   {
     id: 7,
     title: 'Women Grant',
-    description: 'Nomination and enlistment of Thirty (30) women of the Federal Constituency for Women Grant (N20,000) under the Federal Ministry of Humanitarian Affairs, Disaster Management and Social Development',
+    description: 'Nomination and enlistment of Thirty (30) women of the Federal Constituency for Women Grant (N20,000) from 2019 to 2023 under the Federal Ministry of Humanitarian Affairs, Disaster Management and Social Development',
     date: 'April 2021',
     partner: 'Federal Ministry of Humanitarian Affairs, Disaster Management and Social Development',
     category: 'grant',
@@ -96,7 +96,7 @@ export const empowermentPrograms: EmpowermentProgram[] = [
   {
     id: 8,
     title: 'COVID-19 Rapid Response Grant',
-    description: 'Nomination and enlistment of One Hundred and Fifty (150) members of the Federal Constituency for Covid-19 Rapid Response Grant (N5,000 monthly stipend)',
+    description: 'Nomination and enlistment of One Hundred and Fifty (150) members of the Federal Constituency for Covid-19 Rapid Response Grant (N5,000 monthly stipend) from 2019 to 2023.',
     date: 'October 2021',
     partner: 'Federal Government',
     category: 'grant',
@@ -108,7 +108,7 @@ export const empowermentPrograms: EmpowermentProgram[] = [
   {
     id: 9,
     title: 'Survival Fund Scheme',
-    description: 'Nomination and enlistment of One Hundred and Sixty (60) Beneficiaries for Survival Fund Scheme (N30,000) of the Federal Government',
+    description: 'Nomination and enlistment of One Hundred and Sixty (160) Beneficiaries for Survival Fund Scheme (N30,000) of the Federal Government from 2019 to 2023.',
     date: '2021',
     partner: 'Federal Government',
     category: 'grant',
@@ -120,7 +120,7 @@ export const empowermentPrograms: EmpowermentProgram[] = [
   {
     id: 10,
     title: 'Tradermoni, Marketmoni and Farmermoni',
-    description: 'Nomination and enlistment of Seventy Five (75) Beneficiaries for Tradermoni, Marketmoni and Farmermoni programmes of the Federal Government',
+    description: 'Nomination and enlistment of Seventy Five (75) Beneficiaries for Tradermoni, Marketmoni and Farmermoni programmes of the Federal Government from 2019 to 2023.',
     date: '2021',
     partner: 'Federal Government',
     category: 'grant',
@@ -132,11 +132,11 @@ export const empowermentPrograms: EmpowermentProgram[] = [
   {
     id: 11,
     title: '2nd Batch Scholarship at Upland College of Education',
-    description: 'Provision of 3-year Tuition Free Scholarship for Five Hundred (500) indigent students and teenage mothers at Upland College of Education, Ipesi Akoko',
+    description: 'Provision of 3-year Tuition Free Scholarship for Five Hundred (800) indigent students and teenage mothers at Upland College of Education, Ipesi Akoko',
     date: '2020-2021',
     partner: 'Upland College of Education',
     category: 'scholarship',
-    beneficiaryCount: 500,
+    beneficiaryCount: 800,
     status: 'completed'
   },
   {

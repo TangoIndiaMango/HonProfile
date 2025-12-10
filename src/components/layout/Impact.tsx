@@ -13,8 +13,8 @@ import type { Variants } from 'framer-motion';
 const impactData = [
   {
     icon: Users,
-    title:'Pensionable Appointments for over 126 Constituents',
-    description: 'Facilitated over 126 constituents into pensionable appointments across key federal agencies (NPA, NIA, DSS, NRC, FMCs, NDLEA, NSCDC, FRSC, POLAC, Navy, Police, Customs, Immigration, Army, Fire Service) and Ondo State services.'
+    title:'Pensionable Employment for over 126 Constituents',
+    description: 'Facilitated 153 constituents into pensionable employment across key federal agencies (NPA, NIA, DSS, NRC, FMCs, NDLEA, NSCDC, FRSC, POLAC, Navy, Police, Customs, Immigration, Army, Fire Service) and Ondo State services.'
   },
   {
     icon: GraduationCap,
@@ -32,19 +32,19 @@ const impactData = [
     icon: Wrench,
     title: 'Startup Support for Creatives & Artisans',
     description:
-      'Empowered fashion designers, barbers, DJs, photographers, block makers and more with equipment and seed funding to grow their trades.',
+      'Empowered fashion designers, barbers, DJs, photographers, hairdressers, carpenters, event planners, aluminum fabricators, local musicians, videographers, block makers and more with equipment and seed funding to grow their trades.',
   },
   {
     icon: Users,
-    title: 'Local Employment & Aides Programme',
+    title: 'Engagement of Aides to Ease Service Delivery',
     description:
-      "Directly engaged and paid 85 aides from his office emoluments, circulating income and stimulating the constituency's micro-economy.",
+      "Directly engaged and paid 85 aides from his office emoluments for four (4) years during his tenure as Reps Member (2019-2023), circulating income and stimulating the constituency's micro-economy.",
   },
   {
     icon: Tractor,
-    title: 'Motorcycles & Buses for Communities',
+    title: 'Motorcycles & Buses for Constituents',
     description:
-      'Donated 26 motorcycles (one per ward) and 7 buses to co-operative groups, improving mobility and income-generating opportunities.',
+      'Donated 40 motorcycles (one per ward) and 10 buses to co-operative groups for constituents to improve mobility and income-generating opportunities.',
   },
  
   {
@@ -113,16 +113,16 @@ export function Impact() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
         >
-          <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
+          <motion.div className="md:col-span-2 lg:col-span-2" variants={fadeUpCard}>
             <ImpactCard {...impactData[2]} popIcon={popIcon} />
           </motion.div>
-          <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
+          <motion.div className="md:col-span-2 lg:col-span-2" variants={fadeUpCard}>
             <ImpactCard {...impactData[3]} popIcon={popIcon} />
           </motion.div>
-          <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
+          <motion.div className="md:col-span-2 lg:col-span-2" variants={fadeUpCard}>
             <ImpactCard {...impactData[4]} popIcon={popIcon} />
           </motion.div>
-          <motion.div className="md:col-span-2 lg:col-span-1" variants={fadeUpCard}>
+          <motion.div className="md:col-span-2 lg:col-span-2" variants={fadeUpCard}>
             <ImpactCard {...impactData[5]} popIcon={popIcon} />
           </motion.div>
         </motion.div>

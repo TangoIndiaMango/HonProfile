@@ -1,100 +1,215 @@
 'use client';
 
 import { VideoModal } from '@/components/VideoModal';
+import { ImagePreview } from '@/components/ImagePreview';
 import { motion } from 'framer-motion';
-import { Calendar, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, MapPin, Images } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
 const infrastructureProjects = [
   {
     id: 1,
-    title: 'Oka Town Hall Renovation',
-    location: 'Ibaka, Oka Akoko',
-    date: 'July 2019',
-    image: '/recieved/adeogun-ose-hall.png',
-    description: 'Massive renovation of Oka Town Hall along Palace Road',
+    title: 'Town Hall and Civic Center Development',
+    location: 'Various Communities',
+    date: '2019-2023',
+    images: [
+      '/recieved/adeogun-ose-hall.png',
+      '/works/aiyegunle-town-hall.jpg',
+      '/works/oba-akoko-townhall.jpg',
+      '/work_update/Construction of Town Hall  at Oka Odo_adeogun.jpeg',
+      '/work_update/adeogun_civic_center.jpeg',
+      '/work_update/adeogun_civic_center1.jpeg',
+      '/work_update/adeogun_civic_center2.jpeg',
+      '/work_update/oba_Adegoroye_civic_center_by_adeogun.jpeg',
+      '/work_update/oba_adegoroye_civic_center_by_adeogun1.jpeg',
+      '/work_update/oba_adeniyi_civic_center_by_adeogun.jpeg',
+    ],
+    description: 'Massive renovations of town halls and construction of civic centers across various communities including Oka Town Hall, Aiyegunle Town Hall, Oba Akoko Town Hall, and Oba Nurudeen Adeniyi Adegoroye Civic Center',
     type: 'image',
   },
-  // {
-  //   id: 2,
-  //   title: 'Community Town Hall Construction',
-  //   location: 'Oka Odo, Oka Akoko',
-  //   date: 'July 2020',
-  //   image: '/recieved/adeogun-gov.png',
-  //   description: 'World Bank assisted community development project',
-  //   type: 'image',
-  // },
+  {
+    id: 2,
+    title: 'Educational Infrastructure Development',
+    location: 'Various Schools Across Constituency',
+    date: '2020-2024',
+    images: [
+      '/work_update/adeogun_classroom_renovation.jpeg',
+      '/work_update/adeogun_classroom.jpeg',
+      '/work_update/adeogun_classroom3.jpeg',
+      '/work_update/adeogun_classroom4.jpeg',
+      '/work_update/adeogun_classroom5.jpeg',
+      '/work_update/adeogun_classroom6.jpeg',
+      '/work_update/adeogun_classroom7.jpeg',
+      '/work_update/adeogun_highclasroom.jpeg',
+      '/work_update/classroom.jpeg',
+      '/work_update/3-Classroom Block constructed at AUD Akungba_by_adeogun.jpeg',
+      '/work_update/3-Classroom Block constructed at AUD Akungba_by_adeogun2.jpeg',
+      '/works/administrative-block-rennovation.jpg',
+      '/works/clasroom.jpg',
+      '/works/student-desk.jpg',
+      '/works/principal_oba.jpg',
+    ],
+    description: 'Construction of 6-classroom block at Egure High School, Supare Akoko, Akoko South West LGA, Ondo State., Administrative Block at Ajagbokun High School, Ikun Akoko, Akoko South West LGA, Ondo State., and 3-Classroom Block at Ansar-Ud-Deen Primary School, Akungba Akoko.',
+    type: 'image',
+  },
   {
     id: 3,
-    title: 'Ogbere Bridge Reconstruction',
-    location: 'Agba Quarters, Oka Akoko',
-    date: 'June 2021',
-    image: '/recieved/adeogun-bridge.png',
-    description: 'Reconstruction with retention walls and line drains',
+    title: 'Central Mosque Renovation',
+    location: 'Ose Oba',
+    date: 'October 2021',
+    images: [
+      '/work_update/adeogun_central_mosque_ose.jpeg',
+      '/work_update/adeogun_central_mosque_ose1.jpeg',
+      '/work_update/adeogun_central_mosque_ose2.jpeg',
+      '/works/ose_osque.jpg',
+    ],
+    description: 'Complete renovation of the Central Mosque at Ose Community, a growing suburb of Oba Akoko.',
     type: 'image',
   },
   {
     id: 4,
-    title: 'Awolowo Road Construction',
-    location: 'Oba Akoko',
-    date: 'June 2021',
-    image: '/recieved/adeogun-road-work.png',
-    description: 'Construction with erosion control line drains',
+    title: 'Water Infrastructure Projects',
+    location: 'Okele and Surrounding Areas',
+    date: '2021-2023',
+    images: [
+      '/work_update/adeogun_borehole_okele.jpeg',
+      '/work_update/adeogun_borehole.jpeg',
+      '/work_update/adeogun_borehole1.jpeg',
+    ],
+    description: 'Installation of boreholes and water infrastructure to provide clean water access to communities',
     type: 'image',
   },
   {
     id: 5,
-    title: 'Central Mosque Renovation',
-    location: 'Ose Oba',
-    date: 'October 2021',
-    image: '/works/ose_osque.jpg',
-    description: 'Massive renovation of Central Mosque',
+    title: 'Bridge and Drainage Construction',
+    location: 'Ogbele and Various Locations',
+    date: '2021-2022',
+    images: [
+      '/work_update/adeogun_ogbele_bridge.jpeg',
+      '/work_update/adeogun_bridge_drain.jpeg',
+    ],
+    description: 'Reconstruction of bridges with proper drainage systems and retention walls',
     type: 'image',
   },
   {
     id: 6,
-    title: 'Iwaro-Ayegunle Road',
-    location: '7KM connecting communities',
-    date: '2021-2022',
-    image: '/works/good-road-network.jpg',
-    description: 'Construction of 7KM road connecting communities',
+    title: 'Road Infrastructure Development',
+    location: 'Epinmi and Irefun Areas',
+    date: '2021-2023',
+    images: [
+      '/work_update/adeogun_road_epinmi.jpeg',
+      '/work_update/adeogun_irefun_rd.jpeg',
+      '/work_update/adeogun_epinmi1.jpeg',
+      '/work_update/adeogun_epinmi2.jpeg',
+      '/work_update/adeogun_epinmi3.jpeg',
+      '/works/good-road-network.jpg',
+    ],
+    description: 'Construction and rehabilitation of roads connecting communities with proper drainage',
     type: 'image',
   },
   {
     id: 7,
-    title: 'Educational Infrastructure',
-    location: 'Various Schools',
-    date: '2020-2022',
-    image: '/recieved/adeogun-education.png',
-    description: 'School renovations and educational facilities',
+    title: 'Motor and Trailer Park Development',
+    location: 'Oka and Isua',
+    date: '2022-2023',
+    images: [
+      '/work_update/oka_motorpark.jpeg',
+      '/work_update/oka_motorpark1.jpeg',
+      '/work_update/oka_motorpark2.jpeg',
+      '/work_update/adeogun_trailer_park_isua.jpeg',
+      '/work_update/adeogun_trailer_park.jpeg',
+      '/work_update/adeogun_trailer_park2.jpeg',
+      '/work_update/adeogun_trailer2.jpeg',
+      '/works/motor_park_chairma-adeogun.png',
+      '/works/trailer_adeogun.jpeg',
+    ],
+    description: 'Construction and improvement of motor and trailer parks to enhance transportation infrastructure',
     type: 'image',
   },
   {
     id: 8,
-    title: 'Agricultural Support',
-    location: 'Farming Communities',
-    date: '2021-2022',
-    image: '/recieved/adeogun-agricultural-materials.png',
-    description: 'Distribution of agricultural materials and equipment',
+    title: 'Security Infrastructure',
+    location: 'Police Quarters and DSS Offices',
+    date: '2022-2023',
+    images: [
+      '/work_update/police_quaters.jpeg',
+      '/work_update/police_quaters1.jpeg',
+      '/work_update/dss_office.jpeg',
+      '/work_update/dess_office1.jpeg',
+    ],
+    description: 'Development of security infrastructure including police quarters and DSS facilities',
     type: 'image',
   },
-  // {
-  //   id: 9,
-  //   title: 'Sports Development',
-  //   location: 'Youth Centers',
-  //   date: '2021-2022',
-  //   image: '/recieved/adeogun-sport.png',
-  //   description: 'Sports facilities and youth development programs',
-  //   type: 'image',
-  // },
+  {
+    id: 9,
+    title: 'Youth Empowerment Programs',
+    location: 'Various Communities',
+    date: '2021-2023',
+    images: [
+      '/work_update/adeogun_motorcycle.jpeg',
+      '/work_update/adeogun_motorcycle2.jpeg',
+      '/work_update/adeogun_motorcycle3.jpeg',
+    ],
+    description: 'Distribution of motorcycles and empowerment tools to support youth development',
+    type: 'image',
+  },
   {
     id: 10,
-    title: 'Scholarship Program',
+    title: 'Educational Support Programs',
     location: 'Educational Institutions',
-    date: '2020-2022',
-    image: '/recieved/adeogun-schorlaship.png',
-    description: 'Educational support and scholarship programs',
+    date: '2020-2024',
+    images: [
+      '/work_update/adeogun_bursary_award.jpeg',
+      '/work_update/adeogun_bursary_award_1.jpeg',
+    ],
+    description: 'Comprehensive scholarship and bursary programs supporting students across the constituency',
+    type: 'image',
+  },
+  {
+    id: 11,
+    title: 'Upland Development Projects',
+    location: 'Upland Communities',
+    date: '2021-2023',
+    images: [
+      '/work_update/adeogun_upland.jpeg',
+      '/work_update/adeogun_upland_2.jpeg',
+      '/work_update/adeogun_upland1.jpeg',
+      '/work_update/adeogun_upland4.jpeg',
+    ],
+    description: 'Infrastructure development and community projects in upland areas',
+    type: 'image',
+  },
+  {
+    id: 12,
+    title: 'Power Infrastructure',
+    location: 'Various Communities',
+    date: '2022-2023',
+    images: [
+      '/work_update/adeogun_transformer.jpeg',
+      '/works/kva-transformer.jpg',
+    ],
+    description: 'Installation and maintenance of transformers to improve electricity supply',
+    type: 'image',
+  },
+  {
+    id: 13,
+    title: 'Community Welfare and Support Programs',
+    location: 'Various Communities',
+    date: '2020-2024',
+    images: [
+      '/works/adeogun_speech_welfare.jpg',
+      '/works/aid_to_gov.jpg',
+      '/works/femi_agbede.jpg',
+      '/works/high_chief.jpg',
+      '/works/chief_mrs_to_adeogun.jpg',
+      '/works/yahyah-bisola.png',
+      '/works/ahmad-joy.png',
+      '/works/adeogun_for_us.jpg',
+      '/works/adeogun-engineer.jpg',
+      '/works/adeogun_face.jpg',
+    ],
+    description: 'Community welfare initiatives, government support programs, and recognition of community leaders and beneficiaries',
     type: 'image',
   },
 ];
@@ -102,6 +217,8 @@ const infrastructureProjects = [
 export function InfrastructureShowcase() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [selectedImages, setSelectedImages] = useState<string[] | null>(null);
+  const [previewIndex, setPreviewIndex] = useState(0);
 
   const nextSlide = () => {
     setCurrentIndex(prev => (prev + 1) % infrastructureProjects.length);
@@ -116,6 +233,18 @@ export function InfrastructureShowcase() {
   };
 
   const currentProject = infrastructureProjects[currentIndex];
+  const projectImages = currentProject.images;
+
+  const handleImageClick = () => {
+    if (projectImages.length > 0) {
+      setSelectedImages(projectImages);
+      setPreviewIndex(0);
+    }
+  };
+
+  const closeImagePreview = () => {
+    setSelectedImages(null);
+  };
 
   return (
     <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -147,15 +276,66 @@ export function InfrastructureShowcase() {
           >
             <div className="grid md:grid-cols-2 gap-0">
               {/* Image Section */}
-              <div className="relative h-80 md:h-96">
-                <Image
-                  src={currentProject.image}
-                  alt={currentProject.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
+              <div
+                className="relative h-80 md:h-96 cursor-pointer group"
+                onClick={handleImageClick}
+              >
+                {projectImages.length === 1 ? (
+                  // Single image display
+                  <>
+                    <Image
+                      src={projectImages[0]}
+                      alt={currentProject.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  </>
+                ) : (
+                  // Multiple images collage
+                  <div className="grid grid-cols-2 gap-1 h-full p-1">
+                    {/* Main large image */}
+                    <div className="relative col-span-2 row-span-2">
+                      <Image
+                        src={projectImages[0]}
+                        alt={currentProject.title}
+                        fill
+                        className="object-cover rounded-tl-lg rounded-tr-lg group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                    </div>
+                    {/* Smaller images grid */}
+                    {projectImages.slice(1, 5).map((img, idx) => (
+                      <div
+                        key={idx}
+                        className="relative overflow-hidden"
+                      >
+                        <Image
+                          src={img}
+                          alt={`${currentProject.title} ${idx + 2}`}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/20" />
+                      </div>
+                    ))}
+                    {/* Overlay for more images indicator */}
+                    {projectImages.length > 5 && (
+                      <div className="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm text-white px-3 py-1 rounded-full flex items-center gap-2 text-sm font-medium">
+                        <Images className="w-4 h-4" />
+                        +{projectImages.length - 5} more
+                      </div>
+                    )}
+                    {/* Click indicator */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-colors duration-300">
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium text-gray-900">
+                        <Images className="w-4 h-4" />
+                        View {projectImages.length} photos
+                      </div>
+                    </div>
+                  </div>
+                )}
+                <div className="absolute bottom-4 left-4 text-white z-10">
                   <div className="flex items-center gap-2 mb-2">
                     <MapPin className="w-4 h-4" />
                     <span className="text-sm font-medium">
@@ -252,6 +432,17 @@ export function InfrastructureShowcase() {
         <VideoModal
           selectedVideo={selectedVideo}
           setSelectedVideo={setSelectedVideo as any}
+        />
+      )}
+
+      {/* Image Preview Modal */}
+      {selectedImages && (
+        <ImagePreview
+          images={selectedImages}
+          currentIndex={previewIndex}
+          isOpen={true}
+          onClose={closeImagePreview}
+          onIndexChange={setPreviewIndex}
         />
       )}
     </section>

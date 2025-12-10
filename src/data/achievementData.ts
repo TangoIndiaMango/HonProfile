@@ -82,21 +82,21 @@ export const achievementProjects: AchievementProject[] = [
       {
         id: 10,
         date: 'MARCH, 2023.',
-        title: 'Construction of block of classrooms at Supare, Akungba, Ikun, Oba Akoko',
+        title: 'Construction/Renovation of blocks of classrooms at Supare, Akungba, Ikun, Ipesi, Ayegunle and Oba Akoko.',
         status: 'completed' as const,
       },
       {
         id: 11,
         date: 'APRIL, 2023.',
-        title: 'Construction of multiple-purpose halls at Oba Akoko, Akungba',
+        title: 'Construction of Oba Adegoroye Civic Centre at Oja Oloba, Oba Akoko.',
         status: 'completed' as const,
       },
-      {
-        id: 12,
-        date: 'ONGOING, 2023.',
-        title: 'Construction of administrative block at Iwaro - Ayegunle Road',
-        status: 'ongoing' as const,
-      },
+      // {
+      //   id: 12,
+      //   date: 'ONGOING, 2023.',
+      //   title: 'Construction of administrative block at Iwaro - Ayegunle Road',
+      //   status: 'ongoing' as const,
+      // },
     ],
     mediaItems: [
       {
@@ -198,19 +198,19 @@ export const achievementProjects: AchievementProject[] = [
       {
         id: 8,
         date: 'OCTOBER, 2021.',
-        title: 'Provision of 3-year Tuition Free Scholarship for Five Hundred (500) indigent students and teenage mothers at Upland College of Education, Ipesi Akoko to secure a second-chance opportunity for under-privileged youths, and as well, open up the Ilelabo axis of Akoko South East LGA for social and economic prosperities.',
+        title: 'Provision of 3-year Tuition Free Scholarship for Five Hundred (800) indigent students and teenage mothers at Upland College of Education, Ipesi Akoko to secure a second-chance opportunity for under-privileged youths, and as well, open up the Ilelabo axis of Akoko South East LGA for social and economic prosperities.',
         status: 'completed' as const,
       },
       {
         id: 9,
         date: 'FEBRUARY, 2022.',
-        title: 'Provision of Computers and printers for Eight (8) secondary schools in the Constituency.',
+        title: '⁠Provision of computers, printers and other instructional aides to fifteen (15) secondary schools across the Constituency of Akoko South East/South West.',
         status: 'completed' as const,
       },
       {
         id: 10,
         date: 'FEBRUARY, 2022.',
-        title: 'Distribution of Six Thousand (6000) English and Science Text Books to all secondary schools in the Constituency.',
+        title: 'Regular distribution of English and Science Textbooks including Notebooks to students of secondary schools across the Constituency of Akoko South East/South West.',
         status: 'completed' as const,
       },
       {
@@ -280,13 +280,13 @@ export const achievementProjects: AchievementProject[] = [
       {
         id: 1,
         date: 'July 26, 2019.',
-        title: 'Appointment of Eighty five (85) aides who are paid monthly salaries (N35,000 – N100,000) from the personal emoluments of Honourable Adejoro Adeogun, to serve as a direct stimulus for the local economy of the Constituency',
+        title: 'Appointment of Eighty five (85) aides who were paid monthly salaries (N40,000 – N100,000) from the personal emoluments of Honourable Adejoro Adeogun for four (4) years during his tenure as Reps Member (2019-2023), to serve as a direct stimulus for the local economy of the Constituency',
         status: 'completed' as const,
       },
       {
         id: 2,
         date: '-',
-        title: 'Monthly stipend of N100,000 and N50,000 each to all First Class and Second Class Traditional Rulers across the Federal Constituency.',
+        title: 'Payment of monthly stipend/allowance to all the traditional rulers in the two LGAs of Akoko South East and Akoko South West from 2019 to 2023.',
         status: 'completed' as const,
       },
       {
@@ -304,25 +304,25 @@ export const achievementProjects: AchievementProject[] = [
       {
         id: 5,
         date: '-',
-        title: 'Nomination and enlistment of One Hundred and Sixty (60) Beneficiaries for Survival Fund Scheme (N30,000) of the Federal Government.',
+        title: 'Nomination and enlistment of One Hundred and Sixty (160) Beneficiaries for Survival Fund Scheme (N30,000) of the Buhari-led Federal Government.',
         status: 'completed' as const,
       },
       {
         id: 6,
         date: 'APRIL, 2021.',
-        title: 'Nomination and enlistment of Thirty (30) women of the Federal Constituency for Women Grant (N20,000) under the Federal Ministry of Humanitarian Affairs, Disaster Management and Social Development',
+        title: 'Nomination and enlistment of Thirty (30) women of the Federal Constituency for Women Grant (N20,000 Monthly) from 2019 to 2023 under the Federal Ministry of Humanitarian Affairs, Disaster Management and Social Development',
         status: 'completed' as const,
       },
       {
         id: 7,
         date: 'OCTOBER, 2021.',
-        title: 'Nomination and enlistment of One Hundred and Fifty (150) members of the Federal Constituency for Covid-19 Rapid Response Grant (N5,000 monthly stipend)',
+        title: 'Nomination and enlistment of One Hundred and Fifty (150) members of the Federal Constituency for Covid-19 Rapid Response Grant from 2019 to 2023 to cushion the biting effects of covid-19 pandemic.',
         status: 'completed' as const,
       },
       {
         id: 8,
         date: '-',
-        title: 'Nomination and enlistment of Seventy Five (75) Beneficiaries for Tradermoni, Marketmoni and Farmermoni programmes of the Federal Government.',
+        title: 'Nomination and enlistment of Two Hundred and Seventy Five (275) Beneficiaries for Tradermoni, Marketmoni and Farmermoni programmes of the Federal Government.',
         status: 'completed' as const,
       },
       {
@@ -396,19 +396,19 @@ export const achievementProjects: AchievementProject[] = [
     tasks: [
       {
         id: 1,
-        date: 'JULY, 2019.',
+        date: 'JULY, 2022.',
         title: 'Connection of Eti Ose in Akoko South East LGA to the National Grid.',
         status: 'completed' as const,
       },
       {
         id: 2,
-        date: 'JULY, 2020.',
+        date: 'JULY, 2023.',
         title: 'Supply of transformer and extension of electricity Etioro supare Akoko.',
         status: 'completed' as const,
       },
       {
         id: 3,
-        date: 'JANUARY, 2021.',
+        date: 'JANUARY, 2022.',
         title: 'Restoration of electricity to Epinmi Akoko after two years of total blackout.',
         status: 'completed' as const,
       },
@@ -532,19 +532,19 @@ export const achievementProjects: AchievementProject[] = [
       {
         id: 1,
         date: 'July 26, 2019.',
-        title: 'Facilitation of employment opportunities for youths of the Constituency in various Federal Government\'s agencies and parastatals such as the Nigeria Ports Authority, the Nigerian Railway Corporation, Foreign Affairs, Department of State Services DSS, The Nigerian Navy, Nigerian Immigration Service, Federal Medical Centre Lokoja, Federal Medical Centre Ido Ekiti, The Nigerian Army, Federal Fire Service, Nigeria Police Force, Nigeria Security and Civil Defense Corps, Federal Road Safety Corps, Federal School of Medical Laboratory Technology Jos, including Ondo State Universal Basic Education Board and Ondo State Primary Health Care Development Agency.',
+        title: 'Facilitation of employment opportunities for youths of the Constituency in various Federal Government\'s agencies and parastatals such as the Nigeria Ports Authority, the Nigerian Railway Corporation, Foreign Affairs, Department of State Services DSS, The Nigerian Navy, Nigerian Immigration Service, Federal Medical Centre Lokoja, Federal Teaching Hospital Ido Ekiti, The Nigerian Army, Federal Fire Service, Nigeria Police Force, Nigeria Security and Civil Defense Corps,Nigeria Customs Service, Nigeria Police Academy, Federal Road Safety Corps, Federal School of Medical Laboratory Technology Jos, including Ondo State Universal Basic Education Board and Ondo State Primary Health Care Development Agency.',
         status: 'completed' as const,
       },
       {
         id: 2,
         date: '-',
-        title: 'Facilitation of the enlistment of One Hundred and Five (105) constituent members for the NPower Programme of the Federal Government.',
+        title: 'Facilitation of the enlistment of One Hundred and Five (105) constituent members for the NPower Programme of the Federal Government (N30,000 monthly for 2 years).',
         status: 'completed' as const,
       },
       {
         id: 3,
         date: 'APRIL, 2021.',
-        title: 'Facilitation of International Navy Cadet (Ship Pilots) Training by NIMASA for two young members of the Federal Constituency in Greece and India.',
+        title: 'Facilitation of International Navy Cadet (Ship Pilots) Training by NIMASA for members of the Federal Constituency in Greece and India.',
         status: 'completed' as const,
       },
     ],
@@ -645,6 +645,126 @@ export const achievementProjects: AchievementProject[] = [
       // },
     ],
   },
+  {
+    id: 8,
+    category: 'compassionate-representation',
+    title: '08. COMPASSIONATE REPRESENTATION',
+    description: 'Hon. Adejoro Adeogun has consistently advocated for constituents facing injustice, securing favorable outcomes through parliamentary petitions and interventions.',
+    tasks: [
+      {
+        id: 1,
+        date: '2020',
+        title: 'Laid a petition before the House of Reps on behalf of a constituent member who was unjustly laid off from the Nigerian Police and secured a favourable judgment leading to the reinstatement of the Officer.',
+        status: 'completed' as const,
+      },
+      {
+        id: 2,
+        date: '2021',
+        title: 'Laid a petition for a Road Safety Officer sacked in like manner and secured another favourable judgment.',
+        status: 'completed' as const,
+      },
+      {
+        id: 3,
+        date: 'OCTOBER, 2022',
+        title: 'Laid a petition against NYSC and INEC on behalf of a Corps Member from the Constituency who sustained life threatening injuries during the course of National Service and secured a favourable parliament decision to compensate the victim.',
+        status: 'completed' as const,
+      },
+      {
+        id: 4,
+        date: '2022',
+        title: 'Laid a petition on behalf of a constituent member who was fired from the service of Defence Intelligence Agency (DIA) and got a favourable parliament decision.',
+        status: 'completed' as const,
+      },
+      {
+        id: 5,
+        date: 'JANUARY, 2021',
+        title: 'Through the National Emergency Management Agency (NEMA) he facilitated two trailer loads of relief materials consisting of food items, building supplies and clothing materials for fire and accident victims, as well as their relations in Akungba and Iwaro Oka communities.',
+        status: 'completed' as const,
+      },
+      {
+        id: 6,
+        date: 'DECEMBER, 2022',
+        title: 'He also facilitated through NEMA, two trailer loads of food essentials and other relief materials for farmers across the Constituency whose crops were destroyed by floods and other natural disasters.',
+        status: 'completed' as const,
+      },
+      {
+        id: 7,
+        date: '2021',
+        title: 'He led the Crisis Resolution Committee that found a lasting peace to the issues that had degenerated into a communal conflict between Oka Akoko farmers and their hosts in Supare Akoko—both in Akoko South West Local Government Area.',
+        status: 'completed' as const,
+      },
+    ],
+    mediaItems: [],
+  },
+  {
+    id: 9,
+    category: 'national-voice',
+    title: '09. A TRUE NATIONAL VOICE',
+    description: 'Hon. Adejoro Adeogun served with distinction in the 9th National Assembly, holding key leadership positions and committee memberships that shaped national policy and governance.',
+    tasks: [
+      {
+        id: 1,
+        date: '2019-2023',
+        title: 'Served as the Chairman AdHoc Committee on Recovered Assets of the Federal Government (from 2002 to 2020) for Effective Management and Utilization where he led his team to uncover full details about the Abacha loots, Ibori loots, Allison Madueke loots and other recovered loots of nationwide interest.',
+        status: 'completed' as const,
+      },
+      {
+        id: 2,
+        date: '2019-2023',
+        title: 'Served as the Deputy Chairman, Committee on National Security & Intelligence',
+        status: 'completed' as const,
+      },
+      {
+        id: 3,
+        date: '2019-2023',
+        title: 'Headed the National Assembly Conference Committee (Senate & Reps) for the Harmonization of the Bill on the Establishment of the National Centre for the Control of the Proliferation of Small Arms & Light Weapons.',
+        status: 'completed' as const,
+      },
+      {
+        id: 4,
+        date: '2019-2023',
+        title: 'Member, Committee on Petroleum Downstream',
+        status: 'completed' as const,
+      },
+      {
+        id: 5,
+        date: '2019-2023',
+        title: 'Member, Committee on Ecological Fund',
+        status: 'completed' as const,
+      },
+      {
+        id: 6,
+        date: '2019-2023',
+        title: 'Member, Committee on Poverty Alleviation',
+        status: 'completed' as const,
+      },
+      {
+        id: 7,
+        date: '2019-2023',
+        title: 'Member, Committee on National Planning & Economic Development',
+        status: 'completed' as const,
+      },
+      {
+        id: 8,
+        date: '2019-2023',
+        title: 'Member, Committee on Emergency Management & Disaster Preparedness',
+        status: 'completed' as const,
+      },
+      {
+        id: 9,
+        date: '2019-2023',
+        title: 'Member, Committee on Police Affairs',
+        status: 'completed' as const,
+      },
+      {
+        id: 10,
+        date: '2019-2023',
+        title: 'Member, Committee on Constitution Review',
+        status: 'completed' as const,
+      },
+    ],
+    mediaItems: [],
+  },
 ];
 
 // Export individual projects for easy access
@@ -655,3 +775,5 @@ export const electricityProject = achievementProjects[3];
 export const humanDevelopmentProject = achievementProjects[4];
 export const employmentProject = achievementProjects[5];
 export const artisansFarmersProject = achievementProjects[6];
+export const compassionateRepresentationProject = achievementProjects[7];
+export const nationalVoiceProject = achievementProjects[8];
